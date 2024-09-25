@@ -1,0 +1,166 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  background: linear-gradient(120deg, #f4f7f6, #e6f5f2); /* Soft gradient background */
+}
+
+/* Header */
+.app-header {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* More pronounced shadow for header */
+  height: 100px;
+  border-radius: 5px;
+  border-bottom: 1px solid #e0e0e0; /* Subtle border */
+}
+
+.logo {
+  width: 15%; /* Bigger logo size */
+  max-height: 100px;
+  margin-left: 0;
+}
+
+/* Header Buttons */
+.header-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.header-button {
+  text-decoration: none;
+  color: #365fa6; /* Brand primary color */
+  background-color: #f7fafc; /* Light background button */
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  border: 1px solid #e2e8f0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for header buttons */
+.header-button:hover {
+  background-color: #365fa6;
+  color: #ffffff;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  margin-bottom: 20px;
+  border: none;
+  height: 85vh;
+}
+
+/* Grid */
+.grid {
+  width: 50%;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+  border-radius: 10px;
+  background-color: white;
+}
+
+/* Map */
+.map {
+  border: none;
+  width: 50%;
+  height: 75vh;
+  margin-right: 5px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+  border-radius: 10px;
+}
+
+/* Filter */
+.filter {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.MuiFormControl-root {
+  background-color: #ffffff; /* White background */
+  border-radius: 8px; /* Smooth corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+}
+
+/* DataGrid Styling */
+.MuiDataGrid-root {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 0.9rem;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05); /* Light shadow */
+  border-radius: 8px;
+  overflow: hidden;
+  border: none;
+}
+
+/* Adjust Font and Icons */
+.MuiDataGrid-columnHeaders {
+  color: #54c594; /* Green text */
+  font-weight: bold;
+  background-color: #f0f5f4; /* Light background for headers */
+}
+
+/* Filter Styling */
+.MuiOutlinedInput-root {
+  height: 40px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+}
+
+.MuiSelect-icon {
+  top: calc(50% - 10px); /* Centers the dropdown arrow vertically */
+}
+
+.MuiInputLabel-outlined {
+  font-size: 0.9rem;
+}
+
+.MuiMenuItem-root {
+  font-size: 0.9rem;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: #ccc; /* Light border color */
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #888; /* Darker border on hover */
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #54c594; /* Green border when focused */
+}
+
+/* DataGrid Row Hover */
+.MuiDataGrid-row:hover {
+  background-color: rgba(84, 197, 148, 0.1); /* Light green background on hover */
+  transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effects */
+.header-button:hover {
+  background-color: #365fa6;
+  color: white;
+  border-color: #365fa6;
+}
+
+/* Popup Styling */
+.leaflet-popup-content-wrapper {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.leaflet-popup-tip {
+  background-color: #ffffff;
+}

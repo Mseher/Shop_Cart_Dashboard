@@ -1,0 +1,755 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.1649791999999,
+                    41.8690479
+                ]
+            },
+            "properties": {
+                "Location": "1 Connection",
+                "Address": "200 Williams St, North Dighton, MA 02764",
+                "Website": "https://1connectionllc.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.527345,
+                    42.5902486
+                ]
+            },
+            "properties": {
+                "Location": "253 Farmacy",
+                "Address": "253 Millers Falls Rd, Turners Falls, MA 01376",
+                "Website": "NaN"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.3168431,
+                    42.0172354
+                ]
+            },
+            "properties": {
+                "Location": "Apotho Therapeutics",
+                "Address": "119 Washington St, Plainville, MA 02762",
+                "Website": "https://www.apothotherapeutics.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -70.920345,
+                    41.656341
+                ]
+            },
+            "properties": {
+                "Location": "Ascend",
+                "Address": "95 Coggeshall St, New Bedford, MA 02746",
+                "Website": "https://letsascend.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -70.1886449,
+                    42.0497431999999
+                ]
+            },
+            "properties": {
+                "Location": "BeWell Organic Medicine",
+                "Address": "220 Commercial St Unit 2, Provincetown, MA 02657",
+                "Website": "https://www.bwell.life/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -70.9973646,
+                    42.8313871999999
+                ]
+            },
+            "properties": {
+                "Location": "BeWell Organic Medicine",
+                "Address": "17 Broad St, Merrimac, MA 01860",
+                "Website": "https://www.bewell420.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.7704431,
+                    42.57031
+                ]
+            },
+            "properties": {
+                "Location": "Bliss Cannabis Dispensary",
+                "Address": "43 Summer St, Lunenburg, MA 01462",
+                "Website": "https://myblisscannabis.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.6651014999999,
+                    42.5303716
+                ]
+            },
+            "properties": {
+                "Location": "BOOMX Cannabis Co",
+                "Address": "114 Lancaster Rd, Shirley, MA 01464",
+                "Website": "https://www.boomxcannabis.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.6097059,
+                    42.1982664
+                ]
+            },
+            "properties": {
+                "Location": "Boston Bud Factory",
+                "Address": "73 Sargeant St, Holyoke, MA 01040",
+                "Website": "https://bostonbudfactory.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.008571,
+                    42.6663865
+                ]
+            },
+            "properties": {
+                "Location": "Bud Barn",
+                "Address": "682 Spring St, Winchendon, MA 01475",
+                "Website": "https://www.budbarnma.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.2110612,
+                    41.9903337
+                ]
+            },
+            "properties": {
+                "Location": "CANA Craft Cannabis",
+                "Address": "242 Mansfield Ave, Norton, MA 02766",
+                "Website": "https://www.canacraftcannabis.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -70.910628,
+                    42.1608946
+                ]
+            },
+            "properties": {
+                "Location": "CannaVana",
+                "Address": "256 Weymouth St, Rockland, MA 02370",
+                "Website": "https://cannavana.org/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -69.9883627,
+                    41.9162662
+                ]
+            },
+            "properties": {
+                "Location": "Cape Cod Cannabis",
+                "Address": "1446 State Hwy, Wellfleet, MA 02667",
+                "Website": "https://capecodcannabis.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -70.7531396,
+                    41.8291557
+                ]
+            },
+            "properties": {
+                "Location": "Capeway Cannabis, LLC",
+                "Address": "307 Tremont St, Carver, MA 02330",
+                "Website": "https://capewaycannabis.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.4847547,
+                    42.5572686
+                ]
+            },
+            "properties": {
+                "Location": "Collective Premium Cannabis",
+                "Address": "537 Great Rd, Littleton, MA 01460",
+                "Website": "https://collective-cannabis.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.6126623,
+                    42.1954889
+                ]
+            },
+            "properties": {
+                "Location": "Dazed Cannabis",
+                "Address": "56 Jackson St, Holyoke, MA 01040",
+                "Website": "https://dazed.fun/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.6980317,
+                    42.2520141
+                ]
+            },
+            "properties": {
+                "Location": "Dreamer",
+                "Address": "15 College Hwy, Unit G2, Southampton, MA 01073",
+                "Website": "https://www.dreamercannabis.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.617058,
+                    42.1922077
+                ]
+            },
+            "properties": {
+                "Location": "East Coast Pharms",
+                "Address": "630 Beaulieu St, Holyoke, MA 01040",
+                "Website": "https://eastcoastpharms.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.6724537,
+                    42.2788236
+                ]
+            },
+            "properties": {
+                "Location": "Fyre Ants Dispensary",
+                "Address": "102 Northampton St, Easthampton, MA 01027",
+                "Website": "https://fyreants.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.5659228,
+                    42.5518345
+                ]
+            },
+            "properties": {
+                "Location": "Gage Cannabis Co.",
+                "Address": "38 Littleton Rd, Ayer, MA 01432",
+                "Website": "https://gagecannabisco.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.0671175,
+                    41.905465
+                ]
+            },
+            "properties": {
+                "Location": "Greatest Hits Taunton",
+                "Address": "9 Cape Rd, Taunton, MA 02780",
+                "Website": "https://www.greatesthitscc.com/weed-dispensary-taunton/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.0350694,
+                    42.0758077
+                ]
+            },
+            "properties": {
+                "Location": "Green Path Cannabis",
+                "Address": "345 Main St, Southbridge, MA 01550",
+                "Website": "https://www.greenpathcannabis.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.5697217,
+                    42.3480867
+                ]
+            },
+            "properties": {
+                "Location": "HadLeaf Cannabis",
+                "Address": "251 Russell St, Hadley, MA 01035",
+                "Website": "https://hadleafdispensary.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.6274979,
+                    42.3191265
+                ]
+            },
+            "properties": {
+                "Location": "Honey Northampton",
+                "Address": "41 Strong Ave, Northampton, MA 01060",
+                "Website": "https://honeynorthampton.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.6036895,
+                    42.3361151
+                ]
+            },
+            "properties": {
+                "Location": "Kosa",
+                "Address": "505 Boston Post Rd W, Marlborough, MA 01752",
+                "Website": "https://kosa.co/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.5481669999999,
+                    42.6136327
+                ]
+            },
+            "properties": {
+                "Location": "Leaf Joy Dispensary",
+                "Address": "1 Main Rd, Gill, MA 01354",
+                "Website": "https://leafjoyma.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.668264,
+                    42.281894
+                ]
+            },
+            "properties": {
+                "Location": "Liberty Cannabis",
+                "Address": "155 Northampton St, Easthampton, MA 01027",
+                "Website": "https://libertycannabis.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.4541125,
+                    42.4322864
+                ]
+            },
+            "properties": {
+                "Location": "Mass Wellspring - Maynard",
+                "Address": "6 Nason St, Maynard, MA 01754",
+                "Website": "https://masswellspring.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.7800827,
+                    42.5847863
+                ]
+            },
+            "properties": {
+                "Location": "OMG Cannabis",
+                "Address": "223 Lunenburg St, Fitchburg, MA 01420",
+                "Website": "https://omgdispensary.net/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.1583467,
+                    42.1142427
+                ]
+            },
+            "properties": {
+                "Location": "Pioneer Cannabis Company",
+                "Address": "275 Sturbridge Rd, Brimfield, MA 01010",
+                "Website": "https://www.pioneercannabiscompany.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.5027813,
+                    42.3732915
+                ]
+            },
+            "properties": {
+                "Location": "Red Cardinal",
+                "Address": "328 College St, Amherst, MA 01002",
+                "Website": "https://red-cardinal.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.7112889,
+                    42.530437
+                ]
+            },
+            "properties": {
+                "Location": "Revolutionary Clinics",
+                "Address": "130 Pioneer Dr, Leominster, MA 01453",
+                "Website": "https://www.revolutionaryclinics.org/stores/leominster/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.450808,
+                    42.4317992
+                ]
+            },
+            "properties": {
+                "Location": "RISE",
+                "Address": "24 Main St, Maynard, MA 01754",
+                "Website": "https://risecannabis.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -70.8732875,
+                    42.8656641
+                ]
+            },
+            "properties": {
+                "Location": "Road Trip Dispensary",
+                "Address": "191 Lafayette Rd, Salisbury, MA 01952",
+                "Website": "https://roadtripdispensary.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -69.9838012,
+                    41.8549079
+                ]
+            },
+            "properties": {
+                "Location": "Salty Farmers",
+                "Address": "182 Brackett Rd, Eastham, MA 02642",
+                "Website": "https://www.saltyfarmers.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -69.9995349,
+                    41.7782601
+                ]
+            },
+            "properties": {
+                "Location": "Seaside Cannabis Company",
+                "Address": "14 Lots Hollow Rd, Orleans, MA 02653",
+                "Website": "https://seasidecannabis.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.6004712,
+                    42.5865045
+                ]
+            },
+            "properties": {
+                "Location": "Smokey Leaf",
+                "Address": "45 Bank Row, Greenfield, MA 01301",
+                "Website": "https://smokeyleaf.net/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.617559,
+                    42.191651
+                ]
+            },
+            "properties": {
+                "Location": "Solurge",
+                "Address": "650 Beaulieu St, Holyoke, MA 01040",
+                "Website": "https://www.solurge.com/home"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -70.4956263999999,
+                    41.6044987999999
+                ]
+            },
+            "properties": {
+                "Location": "Sublime Cannabis Co.",
+                "Address": "800 Falmouth Rd unit 102a, Mashpee, MA 02649",
+                "Website": "https://sublimecannabis.co/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.2217302,
+                    42.5953668999999
+                ]
+            },
+            "properties": {
+                "Location": "The Boston Garden Dispensary",
+                "Address": "22 Chestnut Hill Ave, Athol, MA 01331",
+                "Website": "https://boston.garden/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.8190173999999,
+                    42.5820385
+                ]
+            },
+            "properties": {
+                "Location": "The Healing Center",
+                "Address": "346 River St, Fitchburg, MA 01420",
+                "Website": "https://thehealingcenterma.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.5371409999999,
+                    42.3642033
+                ]
+            },
+            "properties": {
+                "Location": "The Heirloom Collective, Inc.",
+                "Address": "457 Russell St, Hadley, MA 01035",
+                "Website": "https://www.theheirloomcollective.us/location/cannabis-dispensary-hadley-ma-01035/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -70.0220174999999,
+                    41.9374584
+                ]
+            },
+            "properties": {
+                "Location": "The Piping Plover",
+                "Address": "10 Main St, Wellfleet, MA 02667",
+                "Website": "https://pipingplover.com/recreational-cannabis-dispensary-wellfleet-ma/visit/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.0433329,
+                    42.6869624
+                ]
+            },
+            "properties": {
+                "Location": "Toy Town Alternative Health",
+                "Address": "63 Maple St, Winchendon, MA 01475",
+                "Website": "https://www.toytownthc.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.6339606,
+                    42.3313829
+                ]
+            },
+            "properties": {
+                "Location": "Turning Leaf Centers",
+                "Address": "261 King St, Northampton, MA 01060",
+                "Website": "https://turningleafcannabis.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.5727583,
+                    42.6664165
+                ]
+            },
+            "properties": {
+                "Location": "Uma Flowers",
+                "Address": "2 Tarbell St, Pepperell, MA 01463",
+                "Website": "https://www.umaflowers.co/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.7916523,
+                    42.6480603
+                ]
+            },
+            "properties": {
+                "Location": "United Cultivation",
+                "Address": "601 Fitchburg State Rd, Ashby, MA 01431",
+                "Website": "https://unitedcult.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.5858764,
+                    42.6198692
+                ]
+            },
+            "properties": {
+                "Location": "United Cultivation",
+                "Address": "489 Main St Unit A, Groton, MA 01450",
+                "Website": "https://unitedcult.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.3246886,
+                    41.9196361
+                ]
+            },
+            "properties": {
+                "Location": "Zahara Cannabis",
+                "Address": "70 Frank Mossberg Dr, Attleboro, MA 02703",
+                "Website": "https://zaharacannabis.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.5608719,
+                    42.1342165
+                ]
+            },
+            "properties": {
+                "Location": "Zaza Green",
+                "Address": "311 Page Blvd, Springfield, MA 01104",
+                "Website": "https://zazagreen.com/"
+            }
+        }
+    ]
+}
