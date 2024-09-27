@@ -12,7 +12,6 @@ import deals from './assets/deals.json';
 import '@fortawesome/fontawesome-free/css/all.css';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import 'leaflet-geosearch/dist/geosearch.css';
 import './dashboard.css';
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiYnVkdG5kZXIiLCJhIjoiY20xZmUwYW43MjZvYjJxb2FzY3gxdGR4cCJ9.7BY51LXeOKEHES9pYbBV3A';
@@ -75,19 +74,19 @@ const Dashboard = () => {
     if (geocoderContainer.current && !geocoderContainer.current.hasChildNodes()) {
       const geocoder = new MapboxGeocoder({
         accessToken: mapboxgl.accessToken,
-        placeholder: 'Search for city, neighborhood...',
+        placeholder: 'Search for city...',
         mapboxgl: mapboxgl,
         marker: false,  // Disable the default marker
       });
-  
+
       // Append the geocoder only if it hasn't been appended already
       geocoderContainer.current.appendChild(geocoder.onAdd());
-  
+
       // On geocoder result, zoom to the location
       geocoder.on('result', (e) => {
         const [lng, lat] = e.result.center;
         setSelectedLocation({ lat, lng });
-  
+
         // Move map to selected location
         if (mapRef.current) {
           const map = mapRef.current;
@@ -96,8 +95,21 @@ const Dashboard = () => {
       });
     }
   }, []);
-  
 
+
+
+  // DataGrid columns definition
+  // const columns = [
+  //   {
+  //     field: 'CategoryIcon',
+  //     headerName: '',
+  //     width: 50,
+  //     renderCell: (params) => <i className="fas fa-vial" style={{ color: '#365fa6', fontSize: '20px' }} />,
+  //   },
+  //   { field: 'Deal', headerName: 'Deal', width: 200, flex: 1, }, // Dynamic width with flex
+  //   { field: 'Location', headerName: 'Location', width: 120, flex: 0.5 }, // Dynamic width
+  //   { field: 'Price', headerName: 'Price', width: 120, flex: 0.5, }, // Dynamic width
+  // ];
 
   // DataGrid columns definition
   const columns = [
@@ -114,73 +126,78 @@ const Dashboard = () => {
     {
       field: 'Deal',
       headerName: 'Deal',
-      width: 350,
+      width: 300,
+      flex: 1,
       renderCell: (params) => (
-        <div style={{
-          display: 'flex',
-          alignItems: 'center', // Vertical center alignment
-          justifyContent: 'flex-start', // Keep text aligned to the left
-          whiteSpace: 'normal',
-          overflowWrap: 'break-word',
-          wordBreak: 'break-word',
-          lineHeight: '1.5',
-          minHeight: '60px',
-          padding: '10px',
-          height: '100%',
-        }}>
+        <div
+          style={{
+            display: 'flex',
+            flex: '1',
+            alignItems: 'center',
+            justifyContent: 'flex-start',
+            whiteSpace: 'normal',
+            overflowWrap: 'break-word',
+            wordBreak: 'break-word',
+            lineHeight: '1',
+            minHeight: '60px',
+            padding: '5px',
+            height: '100%',
+          }}
+        >
           {params.row.Deal}
         </div>
-      )
+      ),
     },
     {
       field: 'Location',
       headerName: 'Location',
-      width: 150,
+      width: 120,
+      flex: 0.4,
       renderCell: (params) => (
-        <div style={{
-          display: 'flex',
-          alignItems: 'center', // Vertical center alignment
-          justifyContent: 'flex-start', // Keep text aligned to the left
-          whiteSpace: 'normal',
-          overflowWrap: 'break-word',
-          wordBreak: 'break-word',
-          lineHeight: '1.5',
-          minHeight: '60px',
-          padding: '10px',
-          height: '100%',
-        }}>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'flex-start',
+            whiteSpace: 'normal',
+            overflowWrap: 'break-word',
+            wordBreak: 'break-word',
+            lineHeight: '1',
+            minHeight: '60px',
+            padding: '5px',
+            height: '100%',
+          }}
+        >
           {params.row.Location}
         </div>
-      )
+      ),
     },
     {
       field: 'Price',
       headerName: 'Price',
-      width: 170,
+      width: 120,
+      flex: 0.3,
+
       renderCell: (params) => (
-        <div style={{
-          display: 'flex',
-          alignItems: 'center', // Vertical center alignment
-          justifyContent: 'flex-start', // Keep text aligned to the left
-          whiteSpace: 'normal',
-          overflowWrap: 'break-word',
-          wordBreak: 'break-word',
-          lineHeight: '1.5',
-          minHeight: '60px',
-          padding: '10px',
-          height: '100%',
-        }}>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'flex-start',
+            whiteSpace: 'normal',
+            overflowWrap: 'break-word',
+            wordBreak: 'break-word',
+            lineHeight: '1',
+            minHeight: '60px',
+            padding: '5px',
+            height: '100%',
+          }}
+        >
           {params.row.Price}
         </div>
-      )
+      ),
     },
-    // {
-    //   field: 'Category',
-    //   headerName: 'Category',
-    //   width: 150
-    // }
   ];
-
 
   // Add unique IDs to the deals data for the DataGrid
   const filteredDeals = dealsData.filter((deal) =>
@@ -199,7 +216,7 @@ const Dashboard = () => {
     setSearchTerm(event.target.value);
   };
 
-  // Handle row click event to get the location
+  // Adjust this function if the marker is still not centered properly
   const handleRowClick = (params) => {
     const selectedDeal = params.row;
     const selectedLocationData = locationsData.find(location => location.properties.Location === selectedDeal.Location);
@@ -208,13 +225,13 @@ const Dashboard = () => {
       const [lng, lat] = selectedLocationData.geometry.coordinates;
       setSelectedLocation({ lat, lng });
 
-      // Zoom into the marker on the map
       if (mapRef.current) {
         const map = mapRef.current;
-        map.flyTo([lat, lng], 13); // Adjust the zoom level as needed
+        map.setView([lat, lng], 12); // Adjust the zoom and animate the movement
       }
     }
   };
+
   const HomeButton = () => {
     const map = useMap();
 
@@ -229,7 +246,7 @@ const Dashboard = () => {
             padding: 10px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            font-size: 14px;
+            font-size: 12px;
             border: none;
             cursor: pointer;
           ">
@@ -267,7 +284,7 @@ const Dashboard = () => {
         <div className="search-bar">
           <div className="category-search">
             <span className="search-icon">
-              <i class="fas fa-map-marker-alt" ></i>
+              <i className="fas fa-map-marker-alt" ></i>
             </span>
             <input
               type="text"
@@ -278,7 +295,7 @@ const Dashboard = () => {
           </div>
 
           {/* Geocoder search input */}
-          <div className="location-search" style={{ width: '100%' }}>
+          <div className="location-search" >
             <div className="geocoder" ref={geocoderContainer}>
 
             </div>
@@ -289,32 +306,92 @@ const Dashboard = () => {
           {/* Filter Dropdown */}
           <div className="filter">
             <FormControl
-              variant="outlined"
-              style={{
-                minWidth: 200,
-                margin: '10px',
-                height: '35px', // Adjust height
+              className="filter-control"
+              size="small"
+              sx={{
+                width: '150px', // Default width for larger screens
+                '& .MuiOutlinedInput-root': {
+                  height: '30px', // Set height
+                  fontSize: '0.8rem', // Adjust font size
+                  padding: '0px', // Adjust padding for height consistency
+                },
+                '& .MuiSelect-select': {
+                  display: 'flex',
+                  alignItems: 'center',
+                  height: '100%', // Ensure it takes full height
+                  padding: '0 10px', // Optional: padding to keep some space
+                },
+                // Responsive Media Queries
+                '@media (max-width: 1024px)': {
+                  width: '130px', // Adjust width for tablets
+                  '& .MuiOutlinedInput-root': {
+                    height: '28px', // Slightly smaller height
+                    fontSize: '0.75rem', // Smaller font for tablets
+                  },
+                },
+                '@media (max-width: 768px)': {
+                  width: '120px', // Narrower on mobile
+                  '& .MuiOutlinedInput-root': {
+                    height: '26px',
+                    fontSize: '0.7rem',
+                  },
+                },
+                '@media (max-width: 480px)': {
+                  width: '100px', // Even smaller for very small screens
+                  '& .MuiOutlinedInput-root': {
+                    height: '24px',
+                    fontSize: '0.6rem',
+                  },
+                },
               }}
-              size="small" // Smaller variant of dropdown
             >
-              <InputLabel style={{ fontSize: '12px', color: '#54c594' }}>Filter by Category</InputLabel>
+              <InputLabel sx={{ fontSize: '0.7rem', color: '#54c594', textAlign: 'center' }}>Filter by Category</InputLabel>
               <Select
                 value={selectedCategory}
                 onChange={handleCategoryChange}
                 label="Filter by Category"
+                MenuProps={{
+                  PaperProps: {
+                    sx: {
+                      '& .MuiMenuItem-root': {
+                        fontSize: '0.9rem', // Default size for the dropdown items
+                        padding: '8px 16px', // Default padding
+                      },
+                      // Responsive styling for dropdown menu
+                      '@media (max-width: 1024px)': {
+                        '& .MuiMenuItem-root': {
+                          fontSize: '0.8rem',
+                          padding: '4px 8px',
+                        },
+                      },
+                      '@media (max-width: 768px)': {
+                        '& .MuiMenuItem-root': {
+                          fontSize: '0.7rem',
+                          padding: '4px 8px',
+                        },
+                      },
+                      '@media (max-width: 480px)': {
+                        '& .MuiMenuItem-root': {
+                          fontSize: '0.6rem',
+                        },
+                      },
+                    },
+                  },
+                }}
               >
                 <MenuItem value="">
-                  <i className="fas fa-globe" style={{ marginRight: '10px', fontSize: '14px', color: '#7bdb5c' }}></i>
+                  <i className="fas fa-globe" style={{ marginRight: '10px', fontSize: '0.7rem', color: '#7bdb5c' }}></i>
                   All Categories
                 </MenuItem>
                 {Object.keys(categoryIcons).map((category) => (
                   <MenuItem key={category} value={category}>
-                    <i className={categoryIcons[category].icon} style={{ marginRight: '10px', fontSize: '14px', color: categoryIcons[category].color }}></i>
+                    <i className={categoryIcons[category].icon} style={{ marginRight: '10px', fontSize: '0.8rem', color: categoryIcons[category].color }}></i>
                     {category}
                   </MenuItem>
                 ))}
               </Select>
             </FormControl>
+
           </div>
         </div>
       </header>
@@ -328,7 +405,6 @@ const Dashboard = () => {
 
         {/* Grid */}
         <div className="grid">
-
           <DataGrid
             rows={rows}
             columns={columns}
@@ -336,24 +412,46 @@ const Dashboard = () => {
             rowHeight={80}
             disableColumnMenu
             onRowClick={handleRowClick}
+            className='grid-container'
             sx={{
               // DataGrid root styles
               fontFamily: "'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
-              fontSize: '0.9rem', // Font size for DataGrid text
-              backgroundColor: 'white', // White background for DataGrid
+              fontSize: '0.9rem', // Default font size for larger screens
+              backgroundColor: 'white',
               boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.05)', // Light shadow
-              borderRadius: '8px', // Rounded corners
-              overflow: 'hidden', // Hide overflow content
-              border: 'none', // Remove border
-
+              borderRadius: '8px',
+              overflow: 'hidden',
+              border: 'none',
+              '& .MuiDataGrid-footerContainer': {
+                borderTop: '1px solid #ddd',
+                backgroundColor: 'white',
+                position: 'sticky',
+                zIndex: 99, // Ensures it stays on top
+                padding:0,
+              },
               '& .MuiDataGrid-columnHeaders': {
                 color: '#54c594',
-                fontWeight: 'bold',         // Bold text
+                fontWeight: 'bold',
               },
               // Remove blue border on cell focus
               '& .MuiDataGrid-cell:focus': {
-                outline: 'none',  // Remove outline
-                border: 'none',   // Remove border
+                outline: 'none',
+                border: 'none',
+              },
+
+
+              // Responsive Media Queries
+              '@media (max-width: 1024px)': {
+                fontSize: '0.8rem', // Slightly smaller font for tablets
+                rowHeight: 80, // Adjust row height for tablets
+              },
+              '@media (max-width: 768px)': {
+                fontSize: '0.7rem', // Even smaller font for mobile screens
+                rowHeight: 80, // Reduce row height for mobile
+              },
+              '@media (max-width: 480px)': {
+                fontSize: '0.6rem', // Smallest font for very small screens
+                rowHeight: 70, // Reduce row height further
               },
             }}
           />
@@ -363,7 +461,7 @@ const Dashboard = () => {
         <div className="map">
           <MapContainer
             ref={mapRef}
-            style={{ height: '85vh', width: '100%' }}
+            className="map-container"  // Removed inline style and using the class instead
             center={[41.8690479, -71.1649791999999]} // Centered at the first location
             zoom={9}
           >
@@ -372,7 +470,7 @@ const Dashboard = () => {
               attribution='&copy; <a href="https://www.mapbox.com/">Mapbox</a> contributors'
             />
 
-            {/* Populate markers from the GeoJSON locations data */}
+            {/* Markers */}
             {locationsData.map((location, index) => (
               <Marker
                 key={index}
@@ -389,45 +487,23 @@ const Dashboard = () => {
                 } // Highlight the selected marker
               >
                 <Popup>
-                  <div style={{
-                    borderRadius: '8px',
-                    backgroundColor: 'transparent',
-                    width: '220px'
-                  }}>
-                    <h3 style={{
-                      margin: '0 0 10px 0',
-                      fontSize: '16px',
-                      fontWeight: 'bold',
-                      color: '#54c594',
-                      borderBottom: '1px solid #eee',
-                      paddingBottom: '5px'
-                    }}>
-                      {location.properties.Location}
-                    </h3>
-                    <p style={{ margin: '5px 0', color: '#7f8c8d', fontSize: '14px' }}>
-                      {location.properties.Address}
-                    </p>
+                  <div className="popup-container">
+                    <h3 className="popup-title">{location.properties.Location}</h3>
+                    <p className="popup-address">{location.properties.Address}</p>
                     {location.properties.Website !== "NaN" ? (
                       <a
                         href={location.properties.Website}
                         target="_blank"
                         rel="noopener noreferrer"
-                        style={{
-                          color: '#365fa6',
-                          textDecoration: 'none',
-                          fontWeight: '500',
-                          display: 'block',
-                          marginTop: '10px'
-                        }}
+                        className="popup-website"
                       >
                         Visit Website
                       </a>
                     ) : (
-                      <span style={{ color: '#365fa6', fontSize: '12px' }}>No website available</span>
+                      <span className="popup-no-website">No website available</span>
                     )}
                   </div>
                 </Popup>
-
               </Marker>
             ))}
 
@@ -435,6 +511,7 @@ const Dashboard = () => {
             <HomeButton />
           </MapContainer>
         </div>
+
       </div>
     </div>
   );
