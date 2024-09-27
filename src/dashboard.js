@@ -330,7 +330,7 @@ const Dashboard = () => {
                   },
                 },
                 '@media (max-width: 768px)': {
-                  width: '120px', // Narrower on mobile
+                  width: '100px', // Narrower on mobile
                   '& .MuiOutlinedInput-root': {
                     height: '26px',
                     fontSize: '0.7rem',
