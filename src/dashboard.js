@@ -250,7 +250,7 @@ const Dashboard = () => {
       return () => {
         map.removeControl(homeControl);
       };
-    }, [map, setSelectedLocation]);
+    }, [map]);
 
     return null;
   };
