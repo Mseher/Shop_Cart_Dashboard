@@ -69,6 +69,9 @@ const Dashboard = () => {
   // State to track the selected row location and highlight it on the map
   const [selectedLocation, setSelectedLocation] = useState(null);
 
+  const selectedMarkerRef = useRef(null);
+
+
   // JavaScript code to link geocoder with map, ensure map ref is set correctly.
   useEffect(() => {
     if (geocoderContainer.current && !geocoderContainer.current.hasChildNodes()) {
@@ -216,7 +219,6 @@ const Dashboard = () => {
     setSearchTerm(event.target.value);
   };
 
-  // Adjust this function if the marker is still not centered properly
   const handleRowClick = (params) => {
     const selectedDeal = params.row;
     const selectedLocationData = locationsData.find(location => location.properties.Location === selectedDeal.Location);
@@ -227,7 +229,45 @@ const Dashboard = () => {
 
       if (mapRef.current) {
         const map = mapRef.current;
-        map.setView([lat, lng], 12); // Adjust the zoom and animate the movement
+
+        // Move the map to the selected location and zoom in
+        map.setView([lat, lng], 14, { animate: true });
+
+        // Remove any existing markers before adding a new one
+        if (selectedMarkerRef.current) {
+          map.removeLayer(selectedMarkerRef.current);
+        }
+
+        // Create a new marker at the clicked location
+        const newMarker = L.marker([lat, lng], { icon: highlightedIcon }).addTo(map);
+        if (selectedLocationData) {
+          const [lng, lat] = selectedLocationData.geometry.coordinates;
+          setSelectedLocation({ lat, lng });
+
+          if (mapRef.current) {
+            const map = mapRef.current;
+            map.setView([lat, lng], 12); // Adjust the zoom and animate the movement
+          }
+        }
+        // Create the popup content dynamically
+        const popupContent = `
+        <div class="popup-container">
+          <h3 class="popup-title">${selectedLocationData.properties.Location}</h3>
+          <p class="popup-address">${selectedLocationData.properties.Address}</p>
+          ${selectedLocationData.properties.Website !== 'NaN' ?
+            `<a href="${selectedLocationData.properties.Website}" target="_blank" rel="noopener noreferrer" class="popup-website">
+              Visit Website
+            </a>` :
+            `<span class="popup-no-website">No website available</span>`
+          }
+        </div>
+      `;
+
+        // Bind the popup to the new marker and open it
+        newMarker.bindPopup(popupContent).openPopup();
+
+        // Store the new marker in a ref for future removal
+        selectedMarkerRef.current = newMarker;
       }
     }
   };
@@ -258,6 +298,7 @@ const Dashboard = () => {
         div.onclick = function () {
           map.setView([41.8690479, -71.1649791999999], 8); // Zoom back to the initial center and zoom level
           setSelectedLocation(null);
+          map.removeLayer(selectedMarkerRef.current);
         };
         return div;
       };
@@ -278,29 +319,7 @@ const Dashboard = () => {
     <div>
       {/* Header */}
       <header className="app-header">
-        <img src={logo} alt="Logo" className="logo" />
 
-        {/* Search bar */}
-        <div className="search-bar">
-          <div className="category-search">
-            <span className="search-icon">
-              <i className="fas fa-map-marker-alt" ></i>
-            </span>
-            <input
-              type="text"
-              placeholder="Concentrates, edibles, ..."
-              onChange={handleSearchChange} // Handle search input change
-            />
-
-          </div>
-
-          {/* Geocoder search input */}
-          <div className="location-search" >
-            <div className="geocoder" ref={geocoderContainer}>
-
-            </div>
-          </div>
-        </div>
 
         <div>
           {/* Filter Dropdown */}
@@ -394,6 +413,32 @@ const Dashboard = () => {
 
           </div>
         </div>
+
+
+        <img src={logo} alt="Logo" className="logo" />
+
+        {/* Search bar */}
+        <div className="search-bar">
+          {/* <div className="category-search">
+            <span className="search-icon">
+              <i className="fas fa-map-marker-alt" ></i>
+            </span>
+            <input
+              type="text"
+              placeholder="Concentrates, edibles, ..."
+              onChange={handleSearchChange} // Handle search input change
+            />
+
+          </div> */}
+
+          {/* Geocoder search input */}
+          <div className="location-search" >
+            <div className="geocoder" ref={geocoderContainer}>
+
+            </div>
+          </div>
+        </div>
+
       </header>
 
 
@@ -427,7 +472,7 @@ const Dashboard = () => {
                 backgroundColor: 'white',
                 position: 'sticky',
                 zIndex: 99, // Ensures it stays on top
-                padding:0,
+                padding: 0,
               },
               '& .MuiDataGrid-columnHeaders': {
                 color: '#54c594',

@@ -28,6 +28,7 @@ body {
   width: 15%;
   padding: 5px;
   transition: all 0.3s ease; /* Smooth transition for resizing */
+  justify-content: center;
 }
 
 .search-bar {
@@ -35,22 +36,24 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: flex;
+  display: relative;
   align-items: center;
   justify-content: space-between;
   background-color: #f1f3f4;
   border-radius: 15px;
-  padding: 2px 10px;
+  padding: 2px;
   margin-left: 20px; /* Adjust left margin for space */
   width: 100%;
-  max-width: 450px; /* Maximum width for larger screens */
+  max-width: 300px; /* Maximum width for larger screens */
+  padding-right: 0;
+  margin-right: 0;
 }
 .category-search{
   display: flex;
   align-items: center;
   padding: 2px 10px;
   border-radius: 15px;
-  width: 70%;
+  width: 100%;
 }
 
 .category-search input {
@@ -80,14 +83,14 @@ body {
   /* Set the height of the SVG to match its original size */
 }
 .location-search{
-  width: 100%;
+  width: 300px;
 }
 
 .geocoder{
   display: flex;
   align-items: center;
   position: relative; /* Important: this keeps the dropdown attached to the input */
-  width: 100%; /* Ensure it takes the full width of its container */
+  width: 300px; /* Ensure it takes the full width of its container */
   border-radius: 15px;
   padding: 2px;
   z-index: 999;
@@ -104,6 +107,7 @@ body {
 
 .mapboxgl-ctrl-geocoder input {
   font-size: 13px; /* Font size for text */
+  width: 300px;
 }
 
 .mapboxgl-ctrl-geocoder {
@@ -311,6 +315,7 @@ input {
 /* Filter */
 .filter {
   display: flex;
+  margin-right: 2w0px;
   justify-content: flex-start;
 }
 
@@ -320,6 +325,8 @@ input {
   justify-content: center;
   font-size: 0.7rem;
   transition: all 0.3s ease; /* Smooth resizing effect */
+
+
 }
 .MuiDataGrid-footerContainer {
   border-top: 1px solid #ddd;
@@ -397,6 +404,20 @@ input {
   .mapboxgl-ctrl-geocoder input {
     font-size: 12px; /* Adjust font size for geocoder input */
   }
+
+  /* Adjust the suggestion box */
+  .mapboxgl-ctrl-geocoder .suggestions {
+    width: calc(100vw - 80px); /* Ensure the suggestion box doesn't overflow */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  /* Adjust padding and font size for smaller devices */
+  .mapboxgl-ctrl-geocoder .suggestions li {
+    padding: 10px;
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -449,6 +470,20 @@ input {
   .popup-website {
     font-size: 11px; /* Smaller font size for the link */
     margin-top: 6px;
+  }
+  /* Further adjustments for very small screens */
+  .mapboxgl-ctrl-geocoder input {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .mapboxgl-ctrl-geocoder .suggestions {
+    width: 150px
+  }
+
+  .mapboxgl-ctrl-geocoder .suggestions li {
+    padding: 8px;
+    font-size: 12px;
   }
 }
 

@@ -6,7 +6,7 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -71.1649791999999,
+                    -71.1649792,
                     41.8690479
                 ]
             },
@@ -28,7 +28,7 @@
             "properties": {
                 "Location": "253 Farmacy",
                 "Address": "253 Millers Falls Rd, Turners Falls, MA 01376",
-                "Website": "NaN"
+                "Website": ""
             }
         },
         {
@@ -67,11 +67,11 @@
                 "type": "Point",
                 "coordinates": [
                     -70.1886449,
-                    42.0497431999999
+                    42.0497432
                 ]
             },
             "properties": {
-                "Location": "BeWell Organic Medicine",
+                "Location": "b\\well",
                 "Address": "220 Commercial St Unit 2, Provincetown, MA 02657",
                 "Website": "https://www.bwell.life/"
             }
@@ -82,7 +82,7 @@
                 "type": "Point",
                 "coordinates": [
                     -70.9973646,
-                    42.8313871999999
+                    42.8313872
                 ]
             },
             "properties": {
@@ -111,7 +111,7 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -71.6651014999999,
+                    -71.6651015,
                     42.5303716
                 ]
             },
@@ -381,7 +381,7 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -72.5481669999999,
+                    -72.548167,
                     42.6136327
                 ]
             },
@@ -576,8 +576,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -70.4956263999999,
-                    41.6044987999999
+                    -70.4956264,
+                    41.6044988
                 ]
             },
             "properties": {
@@ -592,7 +592,7 @@
                 "type": "Point",
                 "coordinates": [
                     -72.2217302,
-                    42.5953668999999
+                    42.5953669
                 ]
             },
             "properties": {
@@ -606,7 +606,7 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -71.8190173999999,
+                    -71.8190174,
                     42.5820385
                 ]
             },
@@ -621,7 +621,7 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -72.5371409999999,
+                    -72.537141,
                     42.3642033
                 ]
             },
@@ -636,7 +636,7 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -70.0220174999999,
+                    -70.0220175,
                     41.9374584
                 ]
             },
@@ -749,6 +749,66 @@
                 "Location": "Zaza Green",
                 "Address": "311 Page Blvd, Springfield, MA 01104",
                 "Website": "https://zazagreen.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.21133,
+                    42.46458
+                ]
+            },
+            "properties": {
+                "Location": "Berkshire Roots",
+                "Address": "",
+                "Website": "https://berkshireroots.com/pittsfield-adult-menu/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.03896,
+                    42.37604
+                ]
+            },
+            "properties": {
+                "Location": "Berkshire Roots ",
+                "Address": "",
+                "Website": "https://berkshireroots.com/boston-adult-menu/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.20969,
+                    42.45854
+                ]
+            },
+            "properties": {
+                "Location": "Bloom Brothers",
+                "Address": "",
+                "Website": "https://www.bloombrothers.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.79408,
+                    42.25922
+                ]
+            },
+            "properties": {
+                "Location": "Diem Cannabis",
+                "Address": "",
+                "Website": "https://hellodiem.com/worcester/"
             }
         }
     ]

@@ -1,153 +1,1658 @@
 [
-    {
-      "Location": "Dreamer",
-      "Deal": "NETA – Moon Raker – 1G Wax",
-      "Price": 20,
-      "Category": "Concentrates"
-    },
-    {
-      "Location": "Dreamer",
-      "Deal": "Nature's Heritage Ebony & Ivory – 1g Live Sugar",
-      "Price": 25,
-      "Category": "Concentrates"
-    },
-    {
-      "Location": "United Cultivation",
-      "Deal": "Mix & Match - Any 0.5g Concentrates",
-      "Price": "2 For $50 (Tax Included)",
-      "Category": "Concentrates"
-    },
-    {
-      "Location": "United Cultivation",
-      "Deal": "Mix & Match - Any 1g Concentrates",
-      "Price": "5 For $225 (Tax Included)",
-      "Category": "Concentrates"
-    },
-    {
-      "Location": "Turning Leaf Centers",
-      "Deal": "Badder | Butterwolf",
-      "Price": 50,
-      "Category": "Concentrates"
-    },
-    {
-      "Location": "Pioneer Cannabis Company",
-      "Deal": "$15 Gummies",
-      "Price": 15,
-      "Category": "Edibles"
-    },
-    {
-      "Location": "Dreamer",
-      "Deal": "Mon Cherry, Watermelon Smash",
-      "Price": 10,
-      "Category": "Edibles"
-    },
-    {
-      "Location": "Dreamer",
-      "Deal": "Encore Gummies | All Varieties",
-      "Price": 10,
-      "Category": "Edibles"
-    },
-    {
-      "Location": "Dreamer",
-      "Deal": "Encore Chocolates | All Varieties",
-      "Price": 10,
-      "Category": "Edibles"
-    },
-    {
-      "Location": "Dreamer",
-      "Deal": "Nectar | Seltzers & Water Mix-n-match",
-      "Price": "4 For $10",
-      "Category": "Edibles"
-    },
-    {
-      "Location": "Dreamer",
-      "Deal": "Nectar | Day Time",
-      "Price": 3,
-      "Category": "Edibles"
-    },
-    {
-      "Location": "Dreamer",
-      "Deal": "Nectar | Nite Time",
-      "Price": 2,
-      "Category": "Edibles"
-    },
-    {
-      "Location": "Dreamer",
-      "Deal": "CQ | Mix-n-match",
-      "Price": "4 For $16",
-      "Category": "Edibles"
-    },
-    {
-      "Location": "Dreamer",
-      "Deal": "Incredibles | Strawberry Crunch",
-      "Price": 15,
-      "Category": "Edibles"
-    },
-    {
-      "Location": "Dreamer",
-      "Deal": "Petra – Tart Cherry Mints – 100mg",
-      "Price": 10,
-      "Category": "Edibles"
-    },
-    {
-      "Location": "United Cultivation",
-      "Deal": "Mix & Match Edibles",
-      "Price": 30,
-      "Category": "Edibles"
-    },
-    {
-      "Location": "United Cultivation",
-      "Deal": "Mix & Match Buy 4 Of Any Available Seltzers",
-      "Price": "$30 (Tax included)",
-      "Category": "Edibles"
-    },
-    {
-      "Location": "United Cultivation",
-      "Deal": "Mix & Match Buy 3 Of Any $25 Edible",
-      "Price": "$65 (Tax included)",
-      "Category": "Edibles"
-    },
-    {
-      "Location": "United Cultivation",
-      "Deal": "Mix & Match! Buy 3 Of Any $20 Edible",
-      "Price": "$55 (Tax included)",
-      "Category": "Edibles"
-    },
-    {
-      "Location": "Turning Leaf Centers",
-      "Deal": "Mix & Match - Any $35 Edibles",
-      "Price": "3 For $95 (Tax included)",
-      "Category": "Edibles"
-    },
-    {
-      "Location": "Greatest Hits Taunton",
-      "Deal": "The Heirloom Collective 5mg 20pk Chocolate Bar | Milk Chocolate Cereal Milk",
-      "Price": 18,
-      "Category": "Edibles"
-    },
-    {
-      "Location": "Greatest Hits Taunton",
-      "Deal": "The Heirloom Collective 5mg 10pk Chocolate Bar - Milk Chocolate",
-      "Price": 14,
-      "Category": "Edibles"
-    },
-    {
-      "Location": "Greatest Hits Taunton",
-      "Deal": "THEORYx 5mg 10pk - Fast Acting Gummy | NRG Navel Orange | 2:1 THC:THCV | Sativa • CBD: 10mg",
-      "Price": 16,
-      "Category": "Edibles"
-    },
-    {
-      "Location": "Greatest Hits Taunton",
-      "Deal": "THEORYfx 5mg 10pk - Fast Acting Gummy | RLX Lemon Ginger | 1:1:1 THC:CBD:CBG | THC • THC: 50 mg | CBD: 50 mg",
-      "Price": 16,
-      "Category": "Edibles"
-    },
-    {
-      "Location": "Greatest Hits Taunton",
-      "Deal": "THEORYfx 5mg 10pk - Fast Acting Gummy | ZZZ Cherry Lime | 1:1 THC:CBN | THC • THC: 50 mg",
-      "Price": 16,
-      "Category": "Edibles"
-    }
-  ]
-  
+  {
+    "Location":"Dreamer",
+    "Deal":"NETA \u2013 Moon Raker \u2013 1G Wax",
+    "Price":"20",
+    "Category":"Concentrates"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"Nature's Heritage Ebony & Ivory \u2013 1g Live Sugar",
+    "Price":"25",
+    "Category":"Concentrates"
+  },
+  {
+    "Location":"United Cultivation ",
+    "Deal":"Mix & Match - Any 0.5g Concentrates",
+    "Price":"2 For 50 (Tax Included)",
+    "Category":"Concentrates"
+  },
+  {
+    "Location":"United Cultivation ",
+    "Deal":"Mix & Match - Any 1g Concentrates ",
+    "Price":"5 For 225 (Tax Included)",
+    "Category":"Concentrates"
+  },
+  {
+    "Location":"Turning Leaf",
+    "Deal":"Badder | Butterwolf",
+    "Price":"50",
+    "Category":"Concentrates"
+  },
+  {
+    "Location":"Pioneer Cannabis Company",
+    "Deal":"$15 Gummies",
+    "Price":"15",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"Mon Cherry, Watermelon Smash ",
+    "Price":"10",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"Encore Gummies | All Varieties",
+    "Price":"10",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"Encore Chocolates | All Varieties ",
+    "Price":"10",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"Nectar | Seltzers & Water Mix-n-match",
+    "Price":"4 For 10",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"Nectar | Day Time ",
+    "Price":"3",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"Nectar | Nite Time ",
+    "Price":"2",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"CQ | Mix-n-match ",
+    "Price":"4 For 16",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"Incredibles | Strawberry Crunch ",
+    "Price":"15",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"Petra \u2013 Tart Cherry Mints \u2013 100mg ",
+    "Price":"10",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"United Cultivation ",
+    "Deal":"Mix & Match Edibles",
+    "Price":"30",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"United Cultivation ",
+    "Deal":"Mix & Match Buy 4 Of Any Available Seltzers ",
+    "Price":"30 (Tax included)",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"United Cultivation ",
+    "Deal":"Mix & Match Buy 3 Of Any $25 Edible",
+    "Price":"65 (Tax included)",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"United Cultivation ",
+    "Deal":"Mix & Match! Buy 3 Of Any $20 Edible ",
+    "Price":"55 (Tax included)",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Turning Leaf",
+    "Deal":"Mix & Match - Any $35 Edibles ",
+    "Price":"3 For 95 (Tax included)",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"The Heirloom Collective 5mg 20pk Chocolate Bar | Milk Chocolate Cereal Milk",
+    "Price":"18",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"The Heirloom Collective 5mg 10pk Chocolate Bar - Milk Chocolate ",
+    "Price":"14",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"THEORYx 5mg 10pk - Fast Acting Gummy | NRG Navel Orange | 2:1 THC:THCV | Sativa \u2022 CBD: 10mg",
+    "Price":"16",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"THEORYfx 5mg 10pk - Fast Acting Gummy | RLX Lemon Ginger | 1:1:1 THC:CBD:CBG | THC \u2022 THC: 50 mg | CBD: 50 mg",
+    "Price":"16",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"THEORYfx 5mg 10pk - Fast Acting Gummy | ZZZ Cherry Lime | 1:1 THC:CBN | THC \u2022 THC: 50 mg",
+    "Price":"16",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Blue Raspberry Hybrid Gummies | 10pk Kanha Hybrid \u2022 THC: 106.48 mg  |  CBD: 0.28 mg",
+    "Price":"24",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Perpetual 1g Cereal Milk | Hybrid \u2022 THC: 24.78%",
+    "Price":"12",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Kanha Cherry Gummies | 10pk Sativa \u2022 THC: 98.92 mg  |  CBD: 0.28 mg",
+    "Price":"24",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Kanha Citrus Splash Nano Energy Gummies l 10pk Sativa \u2022 THC: 97.44 mg",
+    "Price":"27",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Kanha Cran-Pomegranate Punch Nano Gummies | 10pk Sativa \u2022 THC: 93.2 mg",
+    "Price":"27",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Fritzzerland Dark Chocolate Blueberry Ginger & Toffee pretzel Bar | 20pk Hybrid \u2022 THC: 109.56 mg",
+    "Price":"22",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Kanha Fruit Punch Fusion Nano Gummies | 10pk Hybrid \u2022 THC: 94.64 mg",
+    "Price":"27",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"GRE Hot Fudge Sundae Bar | 10pk Hybrid \u2022 THC: 47.8 mg  |  CBD: 92.5 mg",
+    "Price":"14",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Kanha Galactic Grape Nano Gummies | 10pk Indica \u2022 THC: 99.84 mg",
+    "Price":"27",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Kanha Harmony 2:1 CBG:THC Acai Blueberry (10pk) Indica \u2022 THC: 94.32 mg  |  CBD: 0.03 mg",
+    "Price":"24",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Golden Remedy Medibles Hazelnut Almond Truffles 2:1 | 10pk Hybrid \u2022 THC: 51.7 mg  |  CBD: 97.3 mg",
+    "Price":"17",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Perpetual Indian Landrace | 1g Indica-Hybrid \u2022 THC: 27.3%  |  CBD: 0.09%",
+    "Price":"12",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Fritzzerland Milk Chocolate Marshmallow Pop Rock l 20pk Hybrid \u2022 THC: 108.06 mg",
+    "Price":"22",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Kanha Nano Marionberry Plum Sleep Gummies | 10pk Indica \u2022 THC: 93.04 mg  |  CBD: 48.16 mg",
+    "Price":"27",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Golden Remedy Medibles PB Caramel Macchiato Truffles | 10pk Hybrid \u2022 THC: 36.9 mg  |  CBD: 69.1 mg",
+    "Price":"17",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Golden Remedy Medibles PB&J Cups Grape 2:1 | 10pk | 10pk Hybrid \u2022 THC: 96.6 mg  |  CBD: 208 mg",
+    "Price":"17",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Kanha Nano Marionberry Plum Sleep Gummies | 10pk Indica \u2022 THC: 93.76 mg",
+    "Price":"27",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Golden Remedy Medibles PB&J Strawberry Cups | 10pk Hybrid \u2022 TAC: 155.1 mg  |  THC: 45.8 mg  |  CBD: 104 mg",
+    "Price":"17",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Kanha Passionfruit Paradise Nano Gummies | 10pk Indica \u2022 THC: 93.76 mg",
+    "Price":"27",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Kanha Raspberry Rose 2:1:1 Nano Love Gummies l 10pk Hybrid \u2022 THC: 96.28 mg  |  CBD: 0.44 mg",
+    "Price":"27",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Kanha Sour Strawberry Lemonade Belt | 2pk Indica \u2022 THC: 92.06 mg",
+    "Price":"24",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Kanha Strawberry Indica Gummies | 10pk Indica \u2022 THC: 107 mg  |  CBD: 0.32 mg",
+    "Price":"24",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Golden Remedy Medibles Strawberry Shortcake Bar | 10pk Hybrid \u2022 THC: 48.88 mg  |  CBD: 58.1 mg",
+    "Price":"14",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Kanha Tangerine Twist Nano Gummies | 10pk Sativa \u2022 THC: 93.64 mg  |  CBD: 0.48 ",
+    "Price":"27",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Kanha Tranquility Blue Raspberry Gummies | 10pk Indica \u2022 THC: 49.48 mg  |  CBD: 46.68 mg",
+    "Price":"24",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Kanha Watermelon Gummies | 10pk Hybrid \u2022 THC: 95.08 mg",
+    "Price":"24",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Revolutionary Clinics",
+    "Deal":"Nectar, Wynk, CQ | Beverages",
+    "Price":"1 For 7 Or 4 For 20",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Revolutionary Clinics",
+    "Deal":"Betty\u2019s Eddies | Full Spectrum Fruit Chews",
+    "Price":"1 For 25 Or 2 For 39",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Revolutionary Clinics",
+    "Deal":"Mix & Match | Kiva Camino & Camino Sours",
+    "Price":"1 For 24 Or 4 For 75",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Revolutionary Clinics",
+    "Deal":"Squier\u2019s Elixir | Low Dose",
+    "Price":"1 For 7 Or 3 For 15",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"All 1\/2 Ounces ",
+    "Price":"60",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"Mix and Match 1\/2 Ounces ",
+    "Price":"2 For 100",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"High Supply 7g Shake ALL STRAINS Mix n\u2019 Match ",
+    "Price":"2 For 35",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"Altitude & Farmer's Cut All 14g Strains ",
+    "Price":"50 Or 2 For 85",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"Bountiful Farms - All 3.5g Strains ",
+    "Price":"2 For 50",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"NEA eighths {Love Truffles #16 | 31.09% TAC; Kemo (Greatest 1) | 31.99% TAC; Zweet Inzanity | 38.87% TAC} *while supplies last*",
+    "Price":"20",
+    "Category":"Flower"
+  },
+  {
+    "Location":"United Cultivation ",
+    "Deal":"Mix & Match - Any $50 Eighths",
+    "Price":"4 For 180 (Tax Included)",
+    "Category":"Flower"
+  },
+  {
+    "Location":"United Cultivation ",
+    "Deal":"Mix & Match - Any $40 Eighths",
+    "Price":"4 For 144 (Tax Included)",
+    "Category":"Flower"
+  },
+  {
+    "Location":"United Cultivation ",
+    "Deal":"Mix & Match - Any $50 Eighths",
+    "Price":"8 For 320 (Tax Included)",
+    "Category":"Flower"
+  },
+  {
+    "Location":"United Cultivation ",
+    "Deal":"Mix & Match - Any $40 Eighths",
+    "Price":"8 For 256 (Tax Included)",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Turning Leaf",
+    "Deal":"Simply Herb 14g {Hulk Angry (IH) Mandarin Zkittlez, (H) Mission Critical)}",
+    "Price":"2 For 85",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Turning Leaf",
+    "Deal":"Heka 7g {(IH) Animal Mintz Cake, (SH) Beach Babe, (SH) Bluezz}",
+    "Price":"2 For 45",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Turning Leaf",
+    "Deal":"Perpetual 3.5g {(H) Gary Poppins (IH) Pure Michigan (H) Red Runtz (H) Skunk Hero (H) The Biz}",
+    "Price":"2 For 35 Or 4 For 60",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Turning Leaf",
+    "Deal":"Simply Herb 3.5g {(IH) Berry Bash, (I) Cinnamon Buddha, (H) GMO Sour Dubb, (H) Road Rage, (IH) Sour 91, (H) Yokai}",
+    "Price":"2 For 32 Or 4 For 54",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Turning Leaf",
+    "Deal":"Standard Farms 3.5g  {(S) Blue Dream x Rootbeer, (S) Cheetah Piss x Bahama Mama, (S) Orange Creamsicle, (I) Skunk Hero x Ethos Cookies}",
+    "Price":"2 For 30 Or 4 For 50",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"Sugaree 1\/8 oz - Orange Cookies x Zanimal",
+    "Price":"28",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"Sugaree 1\/4 oz - Orange Cookies x Zanimal",
+    "Price":"55",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"Sugaree 1\/2 oz - Orange Cookies x Zanimal",
+    "Price":"110",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"Sugaree 1 oz - Orange Cookies x Zanimal",
+    "Price":"220",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"Terple 1\/8 oz",
+    "Price":"28",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"Terple 1\/4 oz",
+    "Price":"55",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"Terple 1\/2 oz",
+    "Price":"110",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"Terple 1 oz",
+    "Price":"220",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"ZBx2 1\/8 oz - Breathe Free",
+    "Price":"28",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"ZBx2 1\/4 oz - Breathe Free",
+    "Price":"55",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"ZBx2 1\/2 oz - Breathe Free",
+    "Price":"110",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"ZBx2 1 oz - Breathe Free",
+    "Price":"220",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Ascend",
+    "Deal":" Simply Herb Eighths Mix & Match SELECT STRAINS ",
+    "Price":"1 for 14 8 for 112",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Ascend",
+    "Deal":" Rythm 3.5g Mix and Match Rythm Eighths ",
+    "Price":" Only 25 Each",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Ascend",
+    "Deal":"2\/$36 High Supply 3.5g Flower ,Mix and Match High Supply Eighths",
+    "Price":"Only 18 Each",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Ascend",
+    "Deal":"Simply Herb Eighths Mix & Match SELECT STRAINS",
+    "Price":"Only 16 Each4 for 64",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Ascend",
+    "Deal":"Binske 3.5g Flower,Mix and Match Eighths ",
+    "Price":"1 for 21",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Ascend",
+    "Deal":"Central Harvest 3.5g Flower,Mix and Match Eighths",
+    "Price":" Only 25 Each",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Revolutionary Clinics",
+    "Deal":"Mix & Match | Guest Cultivar 3.5g | Buy 2 Bundle(Valid Monday \u2013 Wednesday only.)",
+    "Price":"1 For 30 Or 2 For 51",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Revolutionary Clinics",
+    "Deal":"Mix & Match | Rev Farms ",
+    "Price":"1\/2 Oz For 75 Or 1 Oz For 135",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Ascend",
+    "Deal":"Good News Infused Singles,Mix and Match 1g Infused Pre Rolls ",
+    "Price":"1 for 15",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Ascend",
+    "Deal":" Cresco Bundle | 2 Cresco Eighths + 1 High Supply 1g Pre Roll",
+    "Price":"3 for 48",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Revolutionary Clinics",
+    "Deal":"Ace\u2019s 3 of a Kind | 0.5g Pre Roll 3pk |Valid 9\/01 \u2013 9\/30",
+    "Price":"1 For 15 Or 4 For 47",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Revolutionary Clinics",
+    "Deal":"Api Sweet Sluggers | 1g Blunt | ",
+    "Price":"1 For 14 Or 4 For 40",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Revolutionary Clinics",
+    "Deal":"Simply Herb & JBAM | 1g Pre Rolls",
+    "Price":"1 For 10 Or 5 For 35",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Pioneer Cannabis Company",
+    "Deal":"5 Pre-Rolls For $50",
+    "Price":"50",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Pioneer Cannabis Company",
+    "Deal":"1g PRJ Trifecta (Mon., Tues., Weds.)",
+    "Price":"4.20",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"Simply Herb (1g)| $5 or 10 for $40",
+    "Price":"1 For 5 Or 10 For 40",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"Ace Weidmans \/ Rev Farms (1g) | All 1g joints ",
+    "Price":"4",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"Nature\u2019s Heritage \u2013 Colorado Chem (1g) Pre Roll",
+    "Price":"5",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"Botanist - Kazuma (1g) Pre Roll ",
+    "Price":"5",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"All Cookies (1g) Pre-Rolls ",
+    "Price":"8",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"All Harbor House (1g) Pre-Rolls ",
+    "Price":"8",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"United Cultivation ",
+    "Deal":"Mix & Match - Any $12 Pre-Roll ",
+    "Price":"10 For 100 (Tax Included)",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Turning Leaf",
+    "Deal":"Mix & Match - Any $15 1g Pre-Roll",
+    "Price":"5 For 60 (Tax Included)",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Turning Leaf",
+    "Deal":"Perpetual 1g Pre-Rolls {(I) Purple Chem, (IH) Slapz #6, (SH) Sunset High Octane, (H) Wowzers #7}",
+    "Price":"4 For 20",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Turning Leaf",
+    "Deal":"Perpetual 1g Rosin Infused {(IH) Designer Runtz #7}",
+    "Price":"2 For 30",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"Insa .75g PRJ Infused Single - Mary | Indica | THC: 46%",
+    "Price":"17",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"THEORY .75g PRJ Infused Single - 3D | Sativa | THC: 23%",
+    "Price":"11",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"THEORY .75g PRJ Infused Single - Gelatti Cookies | Indica | THC: 21%",
+    "Price":"11",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"Insa 1g PRJ Infused Single - Lift Off | Sativa | THC: 20%",
+    "Price":"8",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Fire Styxx PreRolls 1g | Citrus Dreams (Infused) Hybrid \u2022 THC: 37.32%",
+    "Price":"12",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Fire Styxx Grape Escape (Infused) | 1g Hybrid \u2022 THC: 31.69%",
+    "Price":"12",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Fire Styxx King Cake & Midnight Berry (Infused) | 1g Hybrid \u2022 THC: 37.11%",
+    "Price":"12",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Perpetual Pineapple Beignet | 1g Hybrid \u2022 THC: 26.07%",
+    "Price":"12",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Fire Styxx Pink Panther (Infused) | 1g Hybrid \u2022 THC: 37.75%",
+    "Price":"12",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Fire Styxx Tiger Breath (Infused) l 1g Hybrid \u2022 THC: 41.12%",
+    "Price":"12",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Fire Styxx Unicorn Tears (Infused) | 1g Hybrid \u2022 THC: 35.04%",
+    "Price":"12",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"CANA Craft Cannabis",
+    "Deal":"Fire Styxx Zombie Juice (Infused) | 1g Hybrid \u2022 THC: 37.92%",
+    "Price":"12",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Red Cardinal",
+    "Deal":"1g Pre-Rolls {Governmint Oasis, Sangria Slushy, Ruby Violet, Amoretto Sour Emergen-C}",
+    "Price":"1 For 8 Or 3 For 18",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Solurge ",
+    "Deal":"Fire Styxx PreRolls (King Cake (H), Pink Panther (H), Zombie Juice (H), Unicorn Tears (H))",
+    "Price":"1 For 10 Or 5 For 45",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Revolutionary Clinics",
+    "Deal":"The Heirloom Collective | Salves\/Balms",
+    "Price":"1 For 28 Or 2 For 45",
+    "Category":"Salves & Balms"
+  },
+  {
+    "Location":"Revolutionary Clinics",
+    "Deal":"Howls | Tincture",
+    "Price":"1 For 80 Or 2 For 128",
+    "Category":"Tinctures"
+  },
+  {
+    "Location":"United Cultivation ",
+    "Deal":"Mix & Match Buy 3 Of Any 1906 Tins ",
+    "Price":"115 (Tax included)",
+    "Category":"Tinctures"
+  },
+  {
+    "Location":"United Cultivation ",
+    "Deal":"Mix & Match Buy Any 3 Treeworks $90 Tinctures",
+    "Price":"240 (Tax included)",
+    "Category":"Tinctures"
+  },
+  {
+    "Location":"Revolutionary Clinics",
+    "Deal":"Happy Day Labs | 1g ",
+    "Price":"1 For 45 Or 3 For 110",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Ascend",
+    "Deal":"Simply Herb 1g Vapes,Mix and Match Any 1g Simply Herb Vape Cartridge",
+    "Price":"1 for 21",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Turning Leaf",
+    "Deal":"Crystal Clear 1g {(IH) Blackberry Lemonade, (SH) Blue Dream, (H) Gelato, (S) Maui Wowie, (I) Northern Lights}",
+    "Price":"2 For 35",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"Nectar 1g Disposable All Strains Mix & Match ",
+    "Price":"2 For 50",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"1g 510 Vapes ",
+    "Price":"Starting At 25",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"1g Disposable Vapes ",
+    "Price":"Starting At 30",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"Grandma\u2019s Bush 1g 510 - All Strains",
+    "Price":"15",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Dreamer",
+    "Deal":"Vapes Mix & Match ",
+    "Price":"3 For 30",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"The Heirloom Collective .5g Vape Cartridge | Sauce | Black Lime Reserve | Hybrid | THC: 75%",
+    "Price":"28",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"SWEETSPOT .5g Vape Disposable | Sleep | Indica | THC: 91%",
+    "Price":"25",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"Sapura .5g Vape Disposable | Apple Gelato | Hybrid | THC: 86%",
+    "Price":"25",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"Sapura .5g Vape Disposable | Blueberry Afgoo | Indica | THC: 86%",
+    "Price":"25",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Greatest Hits Taunton",
+    "Deal":"SWEETSPOT .5g Vape Disposable | Vibe | Hybrid | THC: 86%",
+    "Price":"25",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Ascend",
+    "Deal":"Ozone 0.5g Carts Mix and Match ",
+    "Price":"14",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Ascend",
+    "Deal":"Galactic 1g Vape Cartridges,Mix and Match",
+    "Price":" Only 25 Each",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Revolutionary Clinics",
+    "Deal":"X-Trates & Moonshots | 0.5g Distillate |",
+    "Price":"1 For 23 Or 4 For 60",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Revolutionary Clinics",
+    "Deal":"X-Trates | 1g Distillate",
+    "Price":"1 For 38 Or 2 For 62",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Red Cardinal",
+    "Deal":"SHINE Blue Raspberry | 1g",
+    "Price":"1 For 34 Or 3 For 88",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Red Cardinal",
+    "Deal":"Shine Rainbow Sherbert 1g",
+    "Price":"2 For 34 Or 3 For 88",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Red Cardinal",
+    "Deal":"Fernway Lavender Dream 1g",
+    "Price":"3 For 34 Or 3 For 88",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Red Cardinal",
+    "Deal":"FERNWAY Berkshire Gold | 1g",
+    "Price":"4 For 34 Or 3 For 88",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Red Cardinal",
+    "Deal":"FERNWAY Berry Haze | 1g",
+    "Price":"5 For 34 Or 3 For 88",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Red Cardinal",
+    "Deal":"FERNWAY Blueberry Cake | 1g",
+    "Price":"6 For 34 Or 3 For 88",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Red Cardinal",
+    "Deal":"Fernway Mandarin Orange 1g",
+    "Price":"7 For 34 Or 3 For 88",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Red Cardinal",
+    "Deal":"Fernway Red Headed Stranger 1g",
+    "Price":"8 For 34 Or 3 For 88",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Red Cardinal",
+    "Deal":"Fernway White Widow 1g",
+    "Price":"9 For 34 Or 3 For 88",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Red Cardinal",
+    "Deal":"Rythm Durban Z 1g",
+    "Price":"10 For 34 Or 3 For 88",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Red Cardinal",
+    "Deal":"Rythm  Durban Zkittlez 1g",
+    "Price":"11 For 34 Or 3 For 88",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Red Cardinal",
+    "Deal":"Rythm Brownie Scout 1g",
+    "Price":"12 For 34 Or 3 For 88",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Red Cardinal",
+    "Deal":"Rythm Gg# 4 1g ",
+    "Price":"13 For 34 Or 3 For 88",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Red Cardinal",
+    "Deal":"Rythm Jack Herer 1g",
+    "Price":"14 For 34 Or 3 For 88",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Red Cardinal",
+    "Deal":"Rythm  Kush Mountains 1g",
+    "Price":"15 for 34 Or 3 for 88",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Red Cardinal",
+    "Deal":"Rythm  Scottie Piffen 1g",
+    "Price":"16 For 34 Or 3 For 88",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Red Cardinal",
+    "Deal":"rythm Trillarific 1g",
+    "Price":"17 For 34 Or 3 For 88",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Red Cardinal",
+    "Deal":"Rythm Truffles 1g",
+    "Price":"18 For 34 Or 3 For 88",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Red Cardinal",
+    "Deal":"Rythm White Durban 1g",
+    "Price":"19 For 34 Or 3 For 88",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"$1 Phat Panda Preroll W\/Any Purchase ",
+    "Price":"1",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Phat Panda 3.5g [LA Confidential (I) 22.9%, Super Lemon Haze (S) 24.3%] (All Week)",
+    "Price":"1 For 20 or 2 For 30",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Find 28g [Hazmat OG 20.72%, Velvy B 18.6%, EmergenC 19.5%] (Sunday Only)",
+    "Price":"85",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Clean Cuts 28g [Afgooey 19.98%] (Sunday Only)",
+    "Price":"85",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Root & Bloom 28g [Death Star (I) 17.2%, Angry Ginger (S) 18.5%] (Sunday Only)",
+    "Price":"85",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"AMP 1g Kief (All Week)",
+    "Price":"1 For 15",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Drink Loud 100mg Tincture (All Week)",
+    "Price":"1 For 15",
+    "Category":"Tincture"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"New Strain Alert 3.5g Flower [Apple Tartz 30.7%, Nice Cream Cake 30%, Brownie Scout (I) 30.1%, VelcroZ 32.3%] (All Week)",
+    "Price":"1 For 30 or 2 For 50",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Micro Bar 1g Disposable [Orange Tangie (S) 78.1%, Peach Driver (H) 73.9%, Watermelon Mimosa (H) 81.1%, Blueberry Kush (I) 83.1 %, Strawberry Fields (I) 81.7%, Zhirley Temple (H) 87.4%] (All Week)",
+    "Price":"1 For 35",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Phat Panda 1g Disposables & Carts [Unicorn Piss (I) 93.10%, Tropicana Cookies (H) 96.57%, Blackberry (I) 92.62%, Granddaddy Purple (I) 91.69%, Raspberry X Skywalker OG (I) 95.31%, Watermelon (S) 94.83%, Dabalicious (H) 94.32%, Watermelon Mojito (S) 93.3%] (All Week)",
+    "Price":"1 For 25 or 5 For 80",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"$5 Pre-Rolls [Berkshire Bud I Lemon Mintz l 1g (H) 21.64%, High Supply l Apple Fritter #3 l 1g (H) 14.9%, The Pass l Orange Runtz l 1g (H) 21.2%, Root & Bloom l Death Star l 1g (l) 16.26%, Greenfield Greenery \/ Royal Highness .7g (H) 23.11%]",
+    "Price":"5",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"$6 Pre-Rolls [Belushi's farm l Dread Bread l 1g (H) 23.8%, Bountiful Farms l Cheese Wiz l 1g (S) 22.07%, Greenfield Greenery l Hella Jelly l 0.7 (H) 22%, Harbor House l Pawpawlado l 1g (H) 21.77%, Mello Farms l Grape Gasphy l 1g (H) 22.11%, The Pass l GMO x Rootbeer l 1g (H) 26.1%, Simply Herb l Banorange l 1g (H) 26.33%, Paper Crane l Ice Cream Cake \/1g (l) 27%, Paper Crane \/ Gushers \/ 1g (H) 24.42%, Paper Crane l So Hum OG \/ 1g (l) 25.52%, AMP l GLUE \/ 1g (l) 23.58%, Greenfield Greenery \/ Lilac Diesel l .7 (S) 25.3%]",
+    "Price":"6",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"$7 Pre-Rolls [Good Chemistry | Slap n Tickle | 1g (IH) 25.05%, Good Chemistry | Zweet Inzanity | 1g (H) 29.81%, Simply Herb | Butterstuff 1g (H) 29.81%, Stafford Greens | OGKB* LAKC 1.2g (l) 29.6%, Stafford | Watermelon Gelato x LAKC | 1.2g (H) 25.25%, Valorem l Boston Cream Pie #7 l 1g (I) 22.90%, Valorem l Tropsanto #5 l 1g (H) 27.89%, Paper Crane l Biscotti l 1g (l) 28.2%, Paper Crane \/ GMO l 1g (l) 28.9%,  Bountiful Farms\/ Papaya Slapper l 1g (H) 27.85%] ",
+    "Price":"7",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"$8 Pre-Rolls [DAZED I GLUE Dog l 1g BLUNT (IH) 23.42%, Bountiful | Wedding Cake x BlackWidow | 1g (I) 31.30%]",
+    "Price":"8",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Stingers 1g Terpene Infused Pre-Rolls [Dirty Kush Breath (l) 31.67%, Grape Essence x Grapple Pie (l) 50.1%]  ",
+    "Price":"1 For 15",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Good News 1g Terpene Infused Pre-Rolls [Brunch (H) 29.87%, Friyay (S) 28.99%]",
+    "Price":"1 For 15",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Nature's Heritage 1g Terpene Infused Pre-Rolls [The Big Smooth (l) 35.1%, Nature's Heritage, Snake's Cake (1) 44.27%, Nature's Heritage, Lemon Cherry Gelato (l) 52.64%]",
+    "Price":"1 For 15",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Bountiful Farms 1g Terpene Infused Pre-Rolls [Garlic Breath (l) 39.65%]",
+    "Price":"1 For 15",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Crispy Commission Infused 1g Pre-Rolls pack (2 x 0.5g ) [LEDI (IH) 46.89%, Gelato Punch (I) 42.6%]",
+    "Price":"1 For 15",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Nature's Heritage 5g 5pk [Local Skunk (H) 31.1%, & Ebony Ivory (S) 24.75%]",
+    "Price":"1 For 20",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Select BRIQ 2g Disposables [Pineapple Upside Down Cake (H) 86.59%, Super Sour Diesel (S) 90.07%, Watermelon (I) 91.11%]",
+    "Price":"60",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Good News 5g Disposables [Vegas Mint Chocolate (S) 82.10%, Tee Time Lemonade (H) 79.3%, Friyay Melon (S) 79.39%, Afternoon Delight Passionfruit (H) 77.59%, Counting Sheep (THC:CBN) 86.08%]",
+    "Price":"1 For 18.50",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"High Supply 5g Disposables [Bio Button (I) 77.59%, Sweet Burger (H) 80.5%]",
+    "Price":"1 For 18.50",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Liquid Diamond Select .5g Cartridges [Pink Lemons (H) 90.5%, Jack Herer (S) 90.5%, El Fuego (I) 93.4%, GMO (I) 93.3%]",
+    "Price":"1 For 30 or 2 For 50",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Rthym 1g Cartridges [Brownie Scout (I) 90.31%, L'Orange (S) 90.31%, Jack Herer (S) 87.86%, Truffles (H) 93.95%]",
+    "Price":"1 For 30",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Good Chemistry Live Rosin .5g Cartridges [Lift Ticket (H) 77.37%, The Menage (I) 73.1%, Head Hunter (I) 73.1%, Graham Canyon (I) 80.28%]",
+    "Price":"1 For 25 or 2 For 45",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Bountiful Farms Live Rosin .5g Cartridges [GG4 BX8 (I) 84.5%, Banana Cream Pie (H) 87.75%]",
+    "Price":"1 For 25 or 2 For 45",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"AMP 3.5g [Lilac Diesel (S) 19.45%, Headband Cookies (S) 21.48%, Chem (S) 22.08%, Zour Apples (S) 18.1%, Blue Dream (S) 20.1%, Turbo Diesel (S) 22.5%, Citrus Sap (H) 19.6%]",
+    "Price":"1 For 15",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Southie Adams 3.5g [Oreoz (H) 18.8%]",
+    "Price":"1 For 15",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"High Supply 3.5g [Mclaren (S) 19.3%, Hans Solo Burger (H) 27.7%, Supernova 19.7%]",
+    "Price":"1 For 15",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Bountiful Farms 3.5g [Rainbow Belts 3.0 (H) 22.17%, MSQ (H) 30.26%]",
+    "Price":"1 For 25 or 2 For 45",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"In-House 3.5g [Slapz #6 (H) 26.8%, Rainbow Zweater Buds (H) 26.6%, 7 Sins (H) 30.2%]",
+    "Price":"1 For 25 or 2 For 45",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Nature's Heritage 3.5g [Rainbow Sherbet #11 (H) 28.66%]",
+    "Price":"1 For 25 or 2 For 45",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Good Chemistry 3.5g [Graham Canyon (I) 28.17%, Orange Strollo (S) 27.43%, Lavender (I) 28.16%, Colorado Creamsicle (S) 22.16%]",
+    "Price":"1 For 25 or 2 For 45",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Find 3.5g [Velvy B (H) 26.1%, Kablam 23.36%, Gelato Cake 25.15%, Hazmat OG 22.26%, Chocolate Chimp (H) 20.2%]",
+    "Price":"1 For 20 or 4 For 75",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"The Botanist 3.5g [Candy Mangry 27.2%]",
+    "Price":"1 For 20 or 4 For 75",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Bountiful Farms 7g [Texas Shoreline (S) 23.1%]",
+    "Price":"1 For 35",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"The Cure Company 3.5g [Curelato (H) 29.6%]",
+    "Price":"1 For 30 or 2 For 55",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Simply Herb 14g [Milk Truck (H) 21.6%, Bananaconda (H) 27.3%, Road Rage (I) 24.5%, Re-Animator (H) 18.1%, Banoreoz (I) 21.2%, Spritzer (H) 21.2%]",
+    "Price":"1 For 50",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Simply Herb 28g [Gas Cake (H) 22.9%, Chocolate Pie (H) 21.5%, Dual OG (I) 25.1%, Road Rage OG (I) 26.8%, Banoreoz (H) 21.9%]",
+    "Price":"1 For 100",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Ozone 100mg Gummies [Strawberry (H), Green Apple (S), Blood Orange (H), Blue Raspberry ((H)]",
+    "Price":"1 For 15 or 5 For 65",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"XBites 100mg Gummies [Strawberry Supercharge, Orange Matter, Rainbow Upload] ",
+    "Price":"1 For 15 or 5 For 65",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Harbor House Collective 1g Concentrates [IceBallz 80.39%, Slapz + Lil Friend 76.6%, Kosher Kush + Coal Creek Kush 68.35%]",
+    "Price":"1 For 25 or 5 For 45",
+    "Category":"Concentrates"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Crispy Commission 1g Concentrate [Mint Ice Cream Sugar (I) 70.09%, Cherry Pie OG Live Sugar (H) 70.19%, Gold Split Doskies Crumble (H) 75.77%, GMO Fizz Budder (H) 73.47%, Chocolate Slapz Budder (H) 73.49%]",
+    "Price":"1 For 25 or 5 For 45",
+    "Category":"Concentrates"
+  },
+  {
+    "Location":"Fire Antz",
+    "Deal":"Good Chemistry 1g Live Rosin [Peach Maraschino (S) 92.67%, Eastmont (H) 89.03%, Kush Mintz (I) 88.22%, Pink Lemon Aid (S) 87.45%, The Menage (I) 74.19%]",
+    "Price":"1 For 35",
+    "Category":"Concentrates"
+  },
+  {
+    "Location":"Leaf Joy Dispensary",
+    "Deal":"MUNCHIE MONDAY [Munchies Fruit Gems - 3 For $30 Or 5 For $50]",
+    "Price":"3 For 30 or 5 For 50",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Leaf Joy Dispensary",
+    "Deal":"TOKIN' TUESDAY [Green Gold Group Pre-Rolls - $6 (Limit 28)]",
+    "Price":"6",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Leaf Joy Dispensary",
+    "Deal":"WEEDY WAXY WEDNESDAY [4 For $80 Green Gold Group 1\/8ths]",
+    "Price":"4 For 80",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Leaf Joy Dispensary",
+    "Deal":"WEEDY WAXY WEDNESDAY [$30 1g Green Gold Group Concentrates]",
+    "Price":"30",
+    "Category":"Concentrates"
+  },
+  {
+    "Location":"Leaf Joy Dispensary",
+    "Deal":"THIRSTY THURSDAY [4 For $20 Buzzy's Beverages]",
+    "Price":"4 For 20",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Leaf Joy Dispensary",
+    "Deal":"FINALLY FRIDAY [3 For $60 Green Gold Group Pre-Roll 5 Packs]",
+    "Price":"3 For 60",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Leaf Joy Dispensary",
+    "Deal":"SMOKIN' SATURDAY [2 For $50 .5g Liquid Gold Live Resin Carts]",
+    "Price":"2 For 50",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Leaf Joy Dispensary",
+    "Deal":"SMOKIN' SATURDAY [4 For $100 1g Clear Vape Cartridges]",
+    "Price":"4 For 100",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Leaf Joy Dispensary",
+    "Deal":"SMOKIN' SATURDAY [4 For $90 Clear Disposable Vapes]",
+    "Price":"4 For 90",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Leaf Joy Dispensary",
+    "Deal":"SUNDAY FUNDAY [2 For $40 TWAX Infused Pre-Rolls]",
+    "Price":"2 For 40",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Leaf Joy Dispensary",
+    "Deal":"SUNDAY FUNDAY [2 For $30 GGG Live Resin-Infused Pre-Rolls]",
+    "Price":"2 For 30",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Solurge",
+    "Deal":"7g Shakes - 1 For $15 Or 2 For $25",
+    "Price":"1 For 15 Or 2 For 25",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"THCC",
+    "Deal":"HEDY | Energizing Green Apple (20 pk) 100mg",
+    "Price":"25",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"THCC",
+    "Deal":"HEDY | Relaxed Pink Lemonade (20 pk)  100mg",
+    "Price":"25",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"THCC",
+    "Deal":"Lost Farms  | Ice Cream Cake Live Resin (20 pk) (100mg) ",
+    "Price":"30",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"THCC",
+    "Deal":"Betty's | Strawberry  (10 pk) (50 mg)",
+    "Price":"16",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"THCC",
+    "Deal":"Choice Chews | Sour Watermelon (20 pk) (100 mg)",
+    "Price":"10",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"THCC",
+    "Deal":"Rove | Ape (1g) ",
+    "Price":"60",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"THCC",
+    "Deal":"Select | GMO Liquid Diamonds (.5g)",
+    "Price":"40",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"THCC",
+    "Deal":"MAC | Indica RSO Syringe (1g)",
+    "Price":"35",
+    "Category":"Concentrates"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"Seconds 28g - Jazz Cabbage (H)",
+    "Price":"140",
+    "Category":"Flower"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"In House 14g - 2090 Shit (H)",
+    "Price":"70",
+    "Category":"Flower"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"Strane 14g - Guava Tart (H)",
+    "Price":"90",
+    "Category":"Flower"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"Simply Herb 7g - Mellows Flower (H)",
+    "Price":"35",
+    "Category":"Flower"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"Realm 3.5g - Mintdicinal ",
+    "Price":"4 For 80",
+    "Category":"Flower"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"The Heirloom Colective 0.8g Pre-Rolls",
+    "Price":"4 For 30",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"Impressed 0.5g 2pks - Popanonymous",
+    "Price":"2 For 20",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"Strane & Garcia 0.5g 2pks - Hand Picked",
+    "Price":"3 For 30",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"Dogwalker 0.35g 2 pks - Mini Pre-Roll",
+    "Price":"2 For 40",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"Valorem 1g Pre-Rolls",
+    "Price":"3 For 24",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"CommCan 0.5g Pre-Roll 2pks",
+    "Price":"2 For 20",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"Crude Boys Distillate 510 Cartridges 1g",
+    "Price":"5 For 100",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"Rythm All-In-One Disposable 0.35g",
+    "Price":"2 For 40",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"Ozone - Distallate 510 Cartridges 1g",
+    "Price":"3 For 60",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"Rove - Live Resin Diamond Ready-To-Use Vapes 1g",
+    "Price":"60",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"3G Crispy Commission - Jars (1g x 3)",
+    "Price":"84",
+    "Category":"Concentrates"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"Harbour House - Sugar (1g)",
+    "Price":"2 For 50",
+    "Category":"Concentrates"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"2G Bountiful Farms - Hash Rosin (1g)",
+    "Price":"2 For 99",
+    "Category":"Concentrates"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"Crispy Commission - Baller Jars 3.5G ",
+    "Price":"90",
+    "Category":"Concentrates"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"Good Chemistry - Live Rosin 1g",
+    "Price":"40",
+    "Category":"Concentrates"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"Fox Tales - Badder 0.5g ",
+    "Price":"19",
+    "Category":"Concentrates"
+  },
+  {
+    "Location":"OMG Cannabis",
+    "Deal":"Shine - Brownie Scout Badder 0.5g",
+    "Price":"20",
+    "Category":"Concentrates"
+  },
+  {
+    "Location":"Berkshire Roots",
+    "Deal":"Daily Medical Specials - Mondays - 2x Loyalty Points + $10 Off 1g Concentrates, 3.5g \"Baller Jar\", or Dablicators",
+    "Price":"2x Loyalty Points + 10 Off",
+    "Category":"Concentrates"
+  },
+  {
+    "Location":"Berkshire Roots",
+    "Deal":"Daily Medical Specials - Tuesdays - $10 Off One Bottle Of Berkshire Roots Chews",
+    "Price":"10 Off",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Berkshire Roots",
+    "Deal":"Daily Medical Specials - Wednesdays - Get Berkshire Roots 413 Milk Or Dark Chocolate For $10",
+    "Price":"10",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Berkshire Roots",
+    "Deal":"Daily Medical Specials - Thursdays - Get One Bottle Of Berkshire Roots Capsules For $10",
+    "Price":"10",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Zaza Green",
+    "Deal":"Deal Of The Day - Monday - Munchies Monday - Get 3 Edibles For The Price Of 2",
+    "Price":"3 For 2 Edibles",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Zaza Green",
+    "Deal":"Deal Of The Day - Monday - Munchies Monday - 3 Garden Remedies Pre-Rolls For $25",
+    "Price":"3 For 25",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Zaza Green",
+    "Deal":"Deal Of The Day - Tuesday - Token Tuesday - 10 Green Gold Pre-Rolls For $50",
+    "Price":"10 For 50",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Zaza Green",
+    "Deal":"Deal Of The Day - Wednesday - Wax Wednesday - 4 Regenerative Concentrates For $80",
+    "Price":"4 For 80",
+    "Category":"Concentrates"
+  },
+  {
+    "Location":"Zaza Green",
+    "Deal":"Deal Of The Day - Wednesday - Wax Wednesday - 3 Garden Remedies Pre-Rolls For $25",
+    "Price":"3 For 25",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Zaza Green",
+    "Deal":"Deal Of The Day - Thursday - Vape & Shake! - 15% Off Most Vapes (Crude Boys Excluded)",
+    "Price":"15% Off",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Zaza Green",
+    "Deal":"Deal Of The Day - Thursday - Vape & Shake! - 2 ARL Preground Half Ounces For $100",
+    "Price":"2 For 100",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Zaza Green",
+    "Deal":"Deal Of The Day - Friday - Payday - 20% Off Select Ounces",
+    "Price":"20% Off",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Zaza Green",
+    "Deal":"Deal Of The Day - Friday - Payday - 2 For $50 Coast Gummies",
+    "Price":"2 For 50",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Zaza Green",
+    "Deal":"Deal Of The Day - Saturday - 3 For $29 Select Pre-Rolls",
+    "Price":"3 For 29",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Zaza Green",
+    "Deal":"Deal Of The Day - Saturday - 2 For $50 Coast Gummies",
+    "Price":"2 For 50",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Zaza Green",
+    "Deal":"Deal Of The Day - Sunday - 10% Off Select 1g Concentrates",
+    "Price":"10% Off",
+    "Category":"Concentrates"
+  },
+  {
+    "Location":"Zaza Green",
+    "Deal":"Last Day Of The Month Deal - All Non-Preground Ounces For $110-$150",
+    "Price":"110-150",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Solurge",
+    "Deal":"Baby Jeeter Infused Pre-Rolls - Buy One 2.5g Pre-Roll, Get an 0.5g Pre-Roll For $0.01",
+    "Price":"0.01",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Solurge",
+    "Deal":"1g Green Gold Pre-Roll 1 For $5 Or 10 For $40 [Queen Mother Gogi (H), Sour Diesel (S), Rainbow Mac (H), Mac N' Chesse (H), Super Silver Glue (S), Purple Fumez (I), Platinum Gorilla Glue (H)]",
+    "Price":"1 For 5 Or 10 For 40",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Boston Bud Company",
+    "Deal":"Fathom Pre-Rolls 3 For $20 [Slippery Susan, Banana Runtz, Sour London Pund Cake]",
+    "Price":"3 For 20",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Boston Bud Company",
+    "Deal":"Daily Deals - Muncheas Mondays - Muncheas 3 For $50",
+    "Price":"3 For 50",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Boston Bud Company",
+    "Deal":"Daily Deals - Tokin' Tuesdays - Green Gold 1g Pre-Rolls 10 For $50",
+    "Price":"10 For 50",
+    "Category":"Pre-Rolls"
+  },
+  {
+    "Location":"Boston Bud Company",
+    "Deal":"Daily Deals - Choco-Chew Wednesdays - Coast Chocolates & Green Hornet Chews Buy 2 Get $5 Off",
+    "Price":"Buy 2 Get 5 Off",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Boston Bud Company",
+    "Deal":"Daily Deals - Terpene Thursdays - Green Gold .5g 3 For $75",
+    "Price":"3 For 75",
+    "Category":"Concentrates"
+  },
+  {
+    "Location":"Boston Bud Company",
+    "Deal":"Daily Deals - Terpene Thursdays - Live Resin Vapes 3 For $75",
+    "Price":"3 For 75",
+    "Category":"Vapes & Vape Cartridges"
+  },
+  {
+    "Location":"Boston Bud Company",
+    "Deal":"Daily Deals - Flower Fridays - Buy 2 Pre-Packaged Flower, Get $5 Off",
+    "Price":"Buy 2 Get 5 Off",
+    "Category":"Flower"
+  },
+  {
+    "Location":"Boston Bud Company",
+    "Deal":"Daily Deals - Flower Fridays - All ARL InHouse Chews 2 For $20",
+    "Price":"2 For 20",
+    "Category":"Edibles"
+  },
+  {
+    "Location":"Boston Bud Company",
+    "Deal":"Daily Deals - Blooming Saturdays - All Weekly Deals, Rolled Up Into One Day",
+    "Price":"All Weekly Deals Active",
+    "Category":"Flower"
+  }
+]
