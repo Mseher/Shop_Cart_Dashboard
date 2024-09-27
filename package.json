@@ -6,12 +6,15 @@
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@fortawesome/fontawesome-free": "^6.6.0",
+    "@mapbox/mapbox-gl-geocoder": "^5.0.3",
     "@mui/icons-material": "^6.1.1",
     "@mui/material": "^6.1.1",
     "@mui/x-data-grid": "^7.17.0",
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
     "leaflet": "^1.9.4",
+    "leaflet-geosearch": "^4.0.0",
+    "mapbox-gl": "^3.6.0",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",
@@ -28,7 +31,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.16.0" 
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.0"
   },
   "eslintConfig": {
     "extends": [

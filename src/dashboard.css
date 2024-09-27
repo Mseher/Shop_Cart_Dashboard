@@ -8,23 +8,180 @@ body {
   background: linear-gradient(120deg, #f4f7f6, #e6f5f2); /* Soft gradient background */
 }
 
-/* Header */
 .app-header {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   display: flex;
-  justify-content: center; /* Centers horizontally */
+  justify-content: space-between;
   align-items: center;
   background-color: white;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* More pronounced shadow for header */
-  height: 100px;
-  border-radius: 5px;
-  border-bottom: 1px solid #e0e0e0; /* Subtle border */
+  border-bottom: 1px solid lightgray;
+  border-radius: 8px;
+  margin-bottom: 5px;
 }
 
 .logo {
-  width: 15%; /* Bigger logo size */
+  width: 10%;
   max-height: 100px;
-  margin-left: 0;
+  padding: 5px;
 }
+
+.search-bar {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f3f4;
+  border-radius: 15px;
+  padding: 2px 10px;
+  margin-left: 20px; /* Adjust left margin for space */
+}
+.category-search{
+  display: flex;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: 15px;
+  margin-right: 10px;
+  width: 80%;
+}
+
+.category-search input {
+  border: none;
+  outline: none;
+  background: none;
+  width: 100%; /* Take full available space */
+  padding: 5px;
+  font-size: 13px; /* Ensure text size is readable */
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  margin-right: 10px;
+  align-items: center;
+}
+
+.search-icon svg {
+  width: 20px;
+  /* Set the width of the SVG to match its original size */
+  height: 20px;
+  /* Set the height of the SVG to match its original size */
+}
+
+.geocoder{
+  position: relative; /* Important: this keeps the dropdown attached to the input */
+  width: 100%; /* Ensure it takes the full width of its container */
+  border-radius: 15px;
+  padding: 2px;
+}
+
+/* Style the Geocoder input box */
+.mapboxgl-ctrl-geocoder {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%; 
+}
+
+.mapboxgl-ctrl-geocoder input {
+  font-size: 13px; /* Font size for text */
+}
+
+.mapboxgl-ctrl-geocoder {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  padding: 2px; /* Reduce padding to adjust height */
+}
+
+.mapboxgl-ctrl-geocoder .mapboxgl-ctrl-geocoder--icon-search {
+  width: 16px;  /* Adjust icon size if needed */
+  height: 16px;
+  margin-right: 5px; /* Adjust margin for spacing */
+  display: flex;
+  align-items: center; /* Center icon within its container */
+  justify-content: center;
+}
+
+/* Style the suggestions dropdown */
+.mapboxgl-ctrl-geocoder .suggestions {
+  position: absolute;
+  top: 45px;
+  z-index: 1000;
+  width: 100%; 
+  background-color: #fff; /* White background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  border: 1px solid #ddd; /* Light border */
+  padding: 0 /* Padding around suggestions */
+}
+
+/* Individual suggestion styling */
+.mapboxgl-ctrl-geocoder .suggestions li {
+  padding: 12px 15px; /* Padding inside each suggestion */
+  font-size: 14px; /* Font size */
+  font-family: 'Segoe UI', sans-serif;
+  cursor: pointer;
+  color: #333; /* Text color */
+  list-style-type: none; /* Remove bullets */
+  border-bottom: 1px solid #eee; /* Light bottom border */
+}
+
+/* First suggestion styling (bold) */
+.mapboxgl-ctrl-geocoder .suggestions li:first-child {
+  font-weight: bold;
+}
+
+/* Hover effect for suggestions */
+.mapboxgl-ctrl-geocoder .suggestions li:hover {
+  background-color: #f1f3f4; /* Light hover background */
+  color: #365fa6; /* Change text color on hover */
+}
+
+/* Remove the border for the last suggestion item */
+.mapboxgl-ctrl-geocoder .suggestions li:last-child {
+  border-bottom: none;
+}
+
+/* Style the 'Powered by Mapbox' link */
+.mapboxgl-ctrl-geocoder .suggestions .mapboxgl-ctrl-geocoder--powered-by {
+  padding: 10px 15px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  font-size: 12px;
+  color: #888;
+  text-align: right; /* Align text to the right */
+}
+
+/* Hide the pin-right and clear button (if still visible) */
+.mapboxgl-ctrl-geocoder--pin-right,
+.mapboxgl-ctrl-geocoder--button {
+  display: none;
+}
+
+input {
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border: none;
+  outline: none;
+  background: none;
+  width: 200px;
+  /* Adjust as needed */
+  padding: 3px;
+}
+
+
 
 /* Header Buttons */
 .header-buttons {
@@ -56,7 +213,7 @@ body {
   display: flex;
   margin-bottom: 20px;
   border: none;
-  height: 85vh;
+  max-height: 100vh;
 }
 
 /* Grid */
@@ -66,86 +223,27 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
   border-radius: 10px;
   background-color: white;
+  height: 85vh;
 }
 
 /* Map */
 .map {
   border: none;
   width: 50%;
-  height: 75vh;
-  margin-right: 5px;
+  max-height: 100vh;
   overflow: hidden;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
   border-radius: 10px;
+  z-index: 1;
 }
 
 /* Filter */
 .filter {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 10px;
 }
 
-.MuiFormControl-root {
-  background-color: #ffffff; /* White background */
-  border-radius: 8px; /* Smooth corners */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
-}
 
-/* DataGrid Styling */
-.MuiDataGrid-root {
-  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  font-size: 0.9rem;
-  background-color: white;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05); /* Light shadow */
-  border-radius: 8px;
-  overflow: hidden;
-  border: none;
-}
-
-/* Adjust Font and Icons */
-.MuiDataGrid-columnHeaders {
-  color: #54c594; /* Green text */
-  font-weight: bold;
-  background-color: #f0f5f4; /* Light background for headers */
-}
-
-/* Filter Styling */
-.MuiOutlinedInput-root {
-  height: 40px;
-  font-size: 0.9rem;
-  border-radius: 8px;
-}
-
-.MuiSelect-icon {
-  top: calc(50% - 10px); /* Centers the dropdown arrow vertically */
-}
-
-.MuiInputLabel-outlined {
-  font-size: 0.9rem;
-}
-
-.MuiMenuItem-root {
-  font-size: 0.9rem;
-}
-
-.MuiOutlinedInput-notchedOutline {
-  border-color: #ccc; /* Light border color */
-}
-
-.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
-  border-color: #888; /* Darker border on hover */
-}
-
-.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
-  border-color: #54c594; /* Green border when focused */
-}
-
-/* DataGrid Row Hover */
-.MuiDataGrid-row:hover {
-  background-color: rgba(84, 197, 148, 0.1); /* Light green background on hover */
-  transition: background-color 0.3s ease;
-}
 
 /* Button Hover Effects */
 .header-button:hover {

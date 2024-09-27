@@ -1,14 +1,21 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
-import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
 import { DataGrid } from '@mui/x-data-grid'; // Import MUI DataGrid
 import { Select, MenuItem, FormControl, InputLabel } from '@mui/material'; // Import MUI Select and related components
-import './dashboard.css';
+import mapboxgl from 'mapbox-gl';
+import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
+
 import logo from './assets/transparent_cropped_logo.png';
 import locations from './assets/locations.json';
 import deals from './assets/deals.json';
+
 import '@fortawesome/fontawesome-free/css/all.css';
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+import 'leaflet-geosearch/dist/geosearch.css';
+import './dashboard.css';
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiYnVkdG5kZXIiLCJhIjoiY20xZmUwYW43MjZvYjJxb2FzY3gxdGR4cCJ9.7BY51LXeOKEHES9pYbBV3A';
 
 
 // Default Font Awesome Leaflet marker
@@ -48,17 +55,49 @@ const renderCategoryIcon = (category) => {
   return <i className={icon.icon} style={{ color: icon.color, fontSize: '20px' }} />;
 };
 
+
+
 const Dashboard = () => {
   const mapRef = useRef(null);
+  const geocoderContainer = useRef(null); // Reference to the geocoder container
   const locationsData = locations.features;
   const dealsData = deals;
 
-
-  // State to hold the selected category
+  // State to hold the selected category from dropdown mennu
   const [selectedCategory, setSelectedCategory] = useState('');
+  const [searchTerm, setSearchTerm] = useState(''); // For search input
 
   // State to track the selected row location and highlight it on the map
   const [selectedLocation, setSelectedLocation] = useState(null);
+
+  // JavaScript code to link geocoder with map, ensure map ref is set correctly.
+  useEffect(() => {
+    if (geocoderContainer.current && !geocoderContainer.current.hasChildNodes()) {
+      const geocoder = new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken,
+        placeholder: 'Search for city, neighborhood...',
+        mapboxgl: mapboxgl,
+        marker: false,  // Disable the default marker
+      });
+  
+      // Append the geocoder only if it hasn't been appended already
+      geocoderContainer.current.appendChild(geocoder.onAdd());
+  
+      // On geocoder result, zoom to the location
+      geocoder.on('result', (e) => {
+        const [lng, lat] = e.result.center;
+        setSelectedLocation({ lat, lng });
+  
+        // Move map to selected location
+        if (mapRef.current) {
+          const map = mapRef.current;
+          map.flyTo([lat, lng], 8); // Zoom to the result
+        }
+      });
+    }
+  }, []);
+  
+
 
   // DataGrid columns definition
   const columns = [
@@ -145,13 +184,19 @@ const Dashboard = () => {
 
   // Add unique IDs to the deals data for the DataGrid
   const filteredDeals = dealsData.filter((deal) =>
-    selectedCategory === '' || deal.Category === selectedCategory
+    (selectedCategory === '' || deal.Category === selectedCategory) &&
+    (searchTerm === '' || deal.Deal.toLowerCase().includes(searchTerm.toLowerCase()) || deal.Category.toLowerCase().includes(searchTerm.toLowerCase()) || deal.Location.toLowerCase().includes(searchTerm.toLowerCase()))
   );
   const rows = filteredDeals.map((deal, index) => ({ id: index, ...deal }));
 
   // Handle category change
   const handleCategoryChange = (event) => {
     setSelectedCategory(event.target.value);
+  };
+
+  // Handle search input change
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value);
   };
 
   // Handle row click event to get the location
@@ -195,6 +240,7 @@ const Dashboard = () => {
 
         div.onclick = function () {
           map.setView([41.8690479, -71.1649791999999], 8); // Zoom back to the initial center and zoom level
+          setSelectedLocation(null);
         };
         return div;
       };
@@ -204,10 +250,12 @@ const Dashboard = () => {
       return () => {
         map.removeControl(homeControl);
       };
-    }, [map]);
+    }, [map, setSelectedLocation]);
 
     return null;
   };
+
+
 
   return (
     <div>
@@ -215,38 +263,63 @@ const Dashboard = () => {
       <header className="app-header">
         <img src={logo} alt="Logo" className="logo" />
 
+        {/* Search bar */}
+        <div className="search-bar">
+          <div className="category-search">
+            <span className="search-icon">
+              <i class="fas fa-map-marker-alt" ></i>
+            </span>
+            <input
+              type="text"
+              placeholder="Concentrates, edibles, ..."
+              onChange={handleSearchChange} // Handle search input change
+            />
+
+          </div>
+
+          {/* Geocoder search input */}
+          <div className="location-search" style={{ width: '100%' }}>
+            <div className="geocoder" ref={geocoderContainer}>
+
+            </div>
+          </div>
+        </div>
+
+        <div>
+          {/* Filter Dropdown */}
+          <div className="filter">
+            <FormControl
+              variant="outlined"
+              style={{
+                minWidth: 200,
+                margin: '10px',
+                height: '35px', // Adjust height
+              }}
+              size="small" // Smaller variant of dropdown
+            >
+              <InputLabel style={{ fontSize: '12px', color: '#54c594' }}>Filter by Category</InputLabel>
+              <Select
+                value={selectedCategory}
+                onChange={handleCategoryChange}
+                label="Filter by Category"
+              >
+                <MenuItem value="">
+                  <i className="fas fa-globe" style={{ marginRight: '10px', fontSize: '14px', color: '#7bdb5c' }}></i>
+                  All Categories
+                </MenuItem>
+                {Object.keys(categoryIcons).map((category) => (
+                  <MenuItem key={category} value={category}>
+                    <i className={categoryIcons[category].icon} style={{ marginRight: '10px', fontSize: '14px', color: categoryIcons[category].color }}></i>
+                    {category}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+          </div>
+        </div>
       </header>
 
-      {/* Filter Dropdown */}
-      <div className="filter">
-        <FormControl
-          variant="outlined"
-          style={{
-            minWidth: 200,
-            margin: '10px',
-            height: '35px', // Adjust height
-          }}
-          size="small" // Smaller variant of dropdown
-        >
-          <InputLabel style={{ fontSize: '12px', color: '#54c594' }}>Filter by Category</InputLabel>
-          <Select
-            value={selectedCategory}
-            onChange={handleCategoryChange}
-            label="Filter by Category"
-          >
-            <MenuItem value="">
-              <i className="fas fa-globe" style={{ marginRight: '10px', fontSize: '14px', color: '#7bdb5c' }}></i>
-              All Categories
-            </MenuItem>
-            {Object.keys(categoryIcons).map((category) => (
-              <MenuItem key={category} value={category}>
-                <i className={categoryIcons[category].icon} style={{ marginRight: '10px', fontSize: '14px', color: categoryIcons[category].color }}></i>
-                {category}
-              </MenuItem>
-            ))}
-          </Select>
-        </FormControl>
-      </div>
+
 
 
       {/* Dashboard Container */}
@@ -254,19 +327,33 @@ const Dashboard = () => {
 
 
         {/* Grid */}
-        <div className="grid" style={{ height: '75vh', width: '50%' }}>
+        <div className="grid">
 
           <DataGrid
             rows={rows}
             columns={columns}
             pageSize={[5]} // Controls how many rows per page
-            rowHeight={100}
+            rowHeight={80}
             disableColumnMenu
             onRowClick={handleRowClick}
             sx={{
+              // DataGrid root styles
+              fontFamily: "'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
+              fontSize: '0.9rem', // Font size for DataGrid text
+              backgroundColor: 'white', // White background for DataGrid
+              boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.05)', // Light shadow
+              borderRadius: '8px', // Rounded corners
+              overflow: 'hidden', // Hide overflow content
+              border: 'none', // Remove border
+
               '& .MuiDataGrid-columnHeaders': {
                 color: '#54c594',
                 fontWeight: 'bold',         // Bold text
+              },
+              // Remove blue border on cell focus
+              '& .MuiDataGrid-cell:focus': {
+                outline: 'none',  // Remove outline
+                border: 'none',   // Remove border
               },
             }}
           />
@@ -276,7 +363,7 @@ const Dashboard = () => {
         <div className="map">
           <MapContainer
             ref={mapRef}
-            style={{ height: '75vh', width: '100%' }}
+            style={{ height: '85vh', width: '100%' }}
             center={[41.8690479, -71.1649791999999]} // Centered at the first location
             zoom={9}
           >
