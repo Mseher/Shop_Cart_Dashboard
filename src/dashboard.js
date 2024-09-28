@@ -238,9 +238,9 @@ const Dashboard = () => {
   };
 
   // Handle search input change
-  const handleSearchChange = (event) => {
-    setSearchTerm(event.target.value);
-  };
+  // const handleSearchChange = (event) => {
+  //   setSearchTerm(event.target.value);
+  // };
 
   const handleRowClick = (params) => {
     const selectedDeal = params.row;
