@@ -4,6 +4,8 @@ import { DataGrid } from '@mui/x-data-grid'; // Import MUI DataGrid
 import { Select, MenuItem, FormControl, InputLabel } from '@mui/material'; // Import MUI Select and related components
 import mapboxgl from 'mapbox-gl';
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
+import Pagination from '@mui/material/Pagination'; // Import MUI Pagination
+
 
 import logo from './assets/transparent_cropped_logo.png';
 import locations from './assets/locations.json';
@@ -15,6 +17,7 @@ import 'leaflet/dist/leaflet.css';
 import './dashboard.css';
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiYnVkdG5kZXIiLCJhIjoiY20xZmUwYW43MjZvYjJxb2FzY3gxdGR4cCJ9.7BY51LXeOKEHES9pYbBV3A';
+
 
 
 // Default Font Awesome Leaflet marker
@@ -71,6 +74,11 @@ const Dashboard = () => {
 
   const selectedMarkerRef = useRef(null);
 
+  // Custom Pagination state
+  const [page, setPage] = useState(1);
+  const [pageSize] = useState(15); // Fixed number of rows per page
+
+ 
 
   // JavaScript code to link geocoder with map, ensure map ref is set correctly.
   useEffect(() => {
@@ -207,7 +215,22 @@ const Dashboard = () => {
     (selectedCategory === '' || deal.Category === selectedCategory) &&
     (searchTerm === '' || deal.Deal.toLowerCase().includes(searchTerm.toLowerCase()) || deal.Category.toLowerCase().includes(searchTerm.toLowerCase()) || deal.Location.toLowerCase().includes(searchTerm.toLowerCase()))
   );
-  const rows = filteredDeals.map((deal, index) => ({ id: index, ...deal }));
+  // Slicing data for the current page
+  const currentPageDeals = filteredDeals.slice(
+    (page - 1) * pageSize,
+    page * pageSize
+  );
+
+  // Add unique IDs to the deals data for the DataGrid
+  const rows = currentPageDeals.map((deal, index) => ({
+    id: index + (page - 1) * pageSize,
+    ...deal,
+  }));
+
+  // Handling page change
+  const handlePageChange = (event, value) => {
+    setPage(value);
+  };
 
   // Handle category change
   const handleCategoryChange = (event) => {
@@ -313,6 +336,7 @@ const Dashboard = () => {
     return null;
   };
 
+  
 
 
   return (
@@ -453,11 +477,11 @@ const Dashboard = () => {
           <DataGrid
             rows={rows}
             columns={columns}
-            pageSize={[5]} // Controls how many rows per page
-            rowHeight={80}
+            pageSize={pageSize}
             disableColumnMenu
-            onRowClick={handleRowClick}
-            className='grid-container'
+            rowHeight={80}
+            onRowClick={(params) => handleRowClick(params)}
+            className="grid-container"
             sx={{
               // DataGrid root styles
               fontFamily: "'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
@@ -468,11 +492,7 @@ const Dashboard = () => {
               overflow: 'hidden',
               border: 'none',
               '& .MuiDataGrid-footerContainer': {
-                borderTop: '1px solid #ddd',
-                backgroundColor: 'white',
-                position: 'sticky',
-                zIndex: 99, // Ensures it stays on top
-                padding: 0,
+                display:'none'
               },
               '& .MuiDataGrid-columnHeaders': {
                 color: '#54c594',
@@ -500,6 +520,28 @@ const Dashboard = () => {
               },
             }}
           />
+
+          {/* Sticky Pagination */}
+          <div
+            style={{
+              position: 'sticky',
+              bottom: 0,
+              zIndex: 100,
+              backgroundColor: '#fff',
+              padding: '10px 0',
+              borderTop: '1px solid #ddd',
+              display: 'flex',
+              justifyContent: 'center',
+            }}
+          >
+            <Pagination
+              count={Math.ceil(filteredDeals.length / pageSize)}
+              page={page}
+              onChange={handlePageChange}
+              color="primary"
+              shape="rounded"
+            />
+          </div>
         </div>
 
         {/* Map */}
