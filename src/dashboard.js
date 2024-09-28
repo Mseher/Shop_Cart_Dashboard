@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
-import { DataGrid } from '@mui/x-data-grid'; // Import MUI DataGrid
+import { DataGrid, useGridApiRef } from '@mui/x-data-grid'; // Import MUI DataGrid
 import { Select, MenuItem, FormControl, InputLabel } from '@mui/material'; // Import MUI Select and related components
 import mapboxgl from 'mapbox-gl';
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
@@ -62,6 +62,7 @@ const renderCategoryIcon = (category) => {
 const Dashboard = () => {
   const mapRef = useRef(null);
   const geocoderContainer = useRef(null); // Reference to the geocoder container
+  const gridRef = useRef(null); // Create a reference for the DataGrid API
   const locationsData = locations.features;
   const dealsData = deals;
 
@@ -77,7 +78,7 @@ const Dashboard = () => {
   const [page, setPage] = useState(1);
   const [pageSize] = useState(15); // Fixed number of rows per page
 
- 
+
 
   // JavaScript code to link geocoder with map, ensure map ref is set correctly.
   useEffect(() => {
@@ -213,21 +214,25 @@ const Dashboard = () => {
   const filteredDeals = dealsData.filter((deal) =>
     (selectedCategory === '' || deal.Category === selectedCategory)
   );
-  // Slicing data for the current page
-  const currentPageDeals = filteredDeals.slice(
-    (page - 1) * pageSize,
-    page * pageSize
-  );
+  // Pagination: Calculate rows for the current page
+  const currentPageDeals = filteredDeals.slice((page - 1) * pageSize, page * pageSize);
 
-  // Add unique IDs to the deals data for the DataGrid
   const rows = currentPageDeals.map((deal, index) => ({
     id: index + (page - 1) * pageSize,
     ...deal,
   }));
 
+
+
   // Handling page change
   const handlePageChange = (event, value) => {
     setPage(value);
+    const rowIndex = (value - 1) * pageSize;
+    // Scroll the DataGrid to the top row after the page changes
+    if (gridRef.current) {
+      const gridWindow = gridRef.current.querySelector('.MuiDataGrid-virtualScroller'); // DataGrid's scrollable element
+      gridWindow.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   // Handle category change
@@ -334,7 +339,7 @@ const Dashboard = () => {
     return null;
   };
 
-  
+
 
 
   return (
@@ -471,7 +476,7 @@ const Dashboard = () => {
 
 
         {/* Grid */}
-        <div className="grid">
+        <div className="grid" ref={gridRef} >
           <DataGrid
             rows={rows}
             columns={columns}
@@ -489,8 +494,9 @@ const Dashboard = () => {
               borderRadius: '8px',
               overflow: 'hidden',
               border: 'none',
+              paddingBottom: '70px',
               '& .MuiDataGrid-footerContainer': {
-                display:'none'
+                display: 'none'
               },
               '& .MuiDataGrid-columnHeaders': {
                 color: '#54c594',
