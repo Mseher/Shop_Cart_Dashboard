@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
-import { DataGrid, useGridApiRef } from '@mui/x-data-grid'; // Import MUI DataGrid
+import { DataGrid } from '@mui/x-data-grid'; // Import MUI DataGrid
 import { Select, MenuItem, FormControl, InputLabel } from '@mui/material'; // Import MUI Select and related components
 import mapboxgl from 'mapbox-gl';
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
@@ -227,7 +227,6 @@ const Dashboard = () => {
   // Handling page change
   const handlePageChange = (event, value) => {
     setPage(value);
-    const rowIndex = (value - 1) * pageSize;
     // Scroll the DataGrid to the top row after the page changes
     if (gridRef.current) {
       const gridWindow = gridRef.current.querySelector('.MuiDataGrid-virtualScroller'); // DataGrid's scrollable element
