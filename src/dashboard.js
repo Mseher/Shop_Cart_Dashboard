@@ -67,7 +67,6 @@ const Dashboard = () => {
 
   // State to hold the selected category from dropdown mennu
   const [selectedCategory, setSelectedCategory] = useState('');
-  const [searchTerm, setSearchTerm] = useState(''); // For search input
 
   // State to track the selected row location and highlight it on the map
   const [selectedLocation, setSelectedLocation] = useState(null);
@@ -212,8 +211,7 @@ const Dashboard = () => {
 
   // Add unique IDs to the deals data for the DataGrid
   const filteredDeals = dealsData.filter((deal) =>
-    (selectedCategory === '' || deal.Category === selectedCategory) &&
-    (searchTerm === '' || deal.Deal.toLowerCase().includes(searchTerm.toLowerCase()) || deal.Category.toLowerCase().includes(searchTerm.toLowerCase()) || deal.Location.toLowerCase().includes(searchTerm.toLowerCase()))
+    (selectedCategory === '' || deal.Category === selectedCategory)
   );
   // Slicing data for the current page
   const currentPageDeals = filteredDeals.slice(
