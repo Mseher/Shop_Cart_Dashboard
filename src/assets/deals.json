@@ -3,31 +3,31 @@
     "Location":"Dreamer",
     "Deal":"NETA \u2013 Moon Raker \u2013 1G Wax",
     "Price":"20",
-    "Category":"Concentrates"
+    "Category":"Extract"
   },
   {
     "Location":"Dreamer",
     "Deal":"Nature's Heritage Ebony & Ivory \u2013 1g Live Sugar",
     "Price":"25",
-    "Category":"Concentrates"
+    "Category":"Extract"
   },
   {
     "Location":"United Cultivation",
-    "Deal":"Mix & Match - Any 0.5g Concentrates",
+    "Deal":"Mix & Match - Any 0.5g Extract",
     "Price":"2 For 50 (Tax Included)",
-    "Category":"Concentrates"
+    "Category":"Extract"
   },
   {
     "Location":"United Cultivation",
-    "Deal":"Mix & Match - Any 1g Concentrates ",
+    "Deal":"Mix & Match - Any 1g Extract ",
     "Price":"5 For 225 (Tax Included)",
-    "Category":"Concentrates"
+    "Category":"Extract"
   },
   {
     "Location":"Turning Leaf",
     "Deal":"Badder | Butterwolf",
     "Price":"50",
-    "Category":"Concentrates"
+    "Category":"Extract"
   },
   {
     "Location":"Pioneer Cannabis Company",
@@ -493,13 +493,13 @@
   },
   {
     "Location":"Ascend",
-    "Deal":" Simply Herb Eighths Mix & Match SELECT STRAINS ",
+    "Deal":"Simply Herb Eighths Mix & Match SELECT STRAINS ",
     "Price":"1 for 14 8 for 112",
     "Category":"Flower"
   },
   {
     "Location":"Ascend",
-    "Deal":" Rythm 3.5g Mix and Match Rythm Eighths ",
+    "Deal":"Rythm 3.5g Mix and Match Rythm Eighths ",
     "Price":" Only 25 Each",
     "Category":"Flower"
   },
@@ -547,7 +547,7 @@
   },
   {
     "Location":"Ascend",
-    "Deal":" Cresco Bundle | 2 Cresco Eighths + 1 High Supply 1g Pre Roll",
+    "Deal":"Cresco Bundle | 2 Cresco Eighths + 1 High Supply 1g Pre Roll",
     "Price":"3 for 48",
     "Category":"Pre-Rolls"
   },
@@ -729,7 +729,7 @@
     "Location":"Revolutionary Clinics",
     "Deal":"The Heirloom Collective | Salves\/Balms",
     "Price":"1 For 28 Or 2 For 45",
-    "Category":"Salves & Balms"
+    "Category":"Topicals"
   },
   {
     "Location":"Revolutionary Clinics",
@@ -1005,23 +1005,23 @@
     "Location":"Fire Antz",
     "Deal":"Drink Loud 100mg Tincture (All Week)",
     "Price":"1 For 15",
-    "Category":"Tincture"
+    "Category":"Tinctures"
   },
   {
     "Location":"Fire Antz",
-    "Deal":"New Strain Alert 3.5g Flower [Apple Tartz 30.7%, Nice Cream Cake 30%, Brownie Scout (I) 30.1%, VelcroZ 32.3%] (All Week)",
+    "Deal":"New Strain Alert 3.5g Flower (All Week)",
     "Price":"1 For 30 or 2 For 50",
     "Category":"Flower"
   },
   {
     "Location":"Fire Antz",
-    "Deal":"Micro Bar 1g Disposable [Orange Tangie (S) 78.1%, Peach Driver (H) 73.9%, Watermelon Mimosa (H) 81.1%, Blueberry Kush (I) 83.1 %, Strawberry Fields (I) 81.7%, Zhirley Temple (H) 87.4%] (All Week)",
+    "Deal":"Micro Bar 1g Disposable (All Week)",
     "Price":"1 For 35",
     "Category":"Vapes & Vape Cartridges"
   },
   {
     "Location":"Fire Antz",
-    "Deal":"Phat Panda 1g Disposables & Carts [Unicorn Piss (I) 93.10%, Tropicana Cookies (H) 96.57%, Blackberry (I) 92.62%, Granddaddy Purple (I) 91.69%, Raspberry X Skywalker OG (I) 95.31%, Watermelon (S) 94.83%, Dabalicious (H) 94.32%, Watermelon Mojito (S) 93.3%] (All Week)",
+    "Deal":"Phat Panda 1g Disposables & Carts (All Week)",
     "Price":"1 For 25 or 5 For 80",
     "Category":"Vapes & Vape Cartridges"
   },
@@ -1033,13 +1033,13 @@
   },
   {
     "Location":"Fire Antz",
-    "Deal":"$6 Pre-Rolls [Belushi's farm l Dread Bread l 1g (H) 23.8%, Bountiful Farms l Cheese Wiz l 1g (S) 22.07%, Greenfield Greenery l Hella Jelly l 0.7 (H) 22%, Harbor House l Pawpawlado l 1g (H) 21.77%, Mello Farms l Grape Gasphy l 1g (H) 22.11%, The Pass l GMO x Rootbeer l 1g (H) 26.1%, Simply Herb l Banorange l 1g (H) 26.33%, Paper Crane l Ice Cream Cake \/1g (l) 27%, Paper Crane \/ Gushers \/ 1g (H) 24.42%, Paper Crane l So Hum OG \/ 1g (l) 25.52%, AMP l GLUE \/ 1g (l) 23.58%, Greenfield Greenery \/ Lilac Diesel l .7 (S) 25.3%]",
+    "Deal":"$6 Pre-Rolls [Belushi's farm l Dread Bread l 1g (H) 23.8%, Bountiful Farms l Cheese Wiz l 1g (S) 22.07%, Greenfield Greenery l Hella Jelly l 0.7 (H) 22%, Harbor House l Pawpawlado l 1g (H) 21.77%, Mello Farms l Grape Gasphy l 1g (H) 22.11%, Lilac Diesel l .7 (S) 25.3%]",
     "Price":"6",
     "Category":"Pre-Rolls"
   },
   {
     "Location":"Fire Antz",
-    "Deal":"$7 Pre-Rolls [Good Chemistry | Slap n Tickle | 1g (IH) 25.05%, Good Chemistry | Zweet Inzanity | 1g (H) 29.81%, Simply Herb | Butterstuff 1g (H) 29.81%, Stafford Greens | OGKB* LAKC 1.2g (l) 29.6%, Stafford | Watermelon Gelato x LAKC | 1.2g (H) 25.25%, Valorem l Boston Cream Pie #7 l 1g (I) 22.90%, Valorem l Tropsanto #5 l 1g (H) 27.89%, Paper Crane l Biscotti l 1g (l) 28.2%, Paper Crane \/ GMO l 1g (l) 28.9%,  Bountiful Farms\/ Papaya Slapper l 1g (H) 27.85%] ",
+    "Deal":"$7 Pre-Rolls [Good Chemistry | Slap n Tickle | 1g (IH) 25.05%, Good Chemistry | Zweet Inzanity | 1g (H) 29.81%, Simply Herb | Butterstuff 1g (H) 29.81%, Stafford Greens | OGKB* LAKC 1.2g (l) 29.6%, Stafford | Watermelon Gelato x LAKC | 1.2g (H) 25.25%, Valorem l Boston Cream Pie #7 l 1g (I) 22.90%] ",
     "Price":"7",
     "Category":"Pre-Rolls"
   },
@@ -1219,21 +1219,21 @@
   },
   {
     "Location":"Fire Antz",
-    "Deal":"Harbor House Collective 1g Concentrates [IceBallz 80.39%, Slapz + Lil Friend 76.6%, Kosher Kush + Coal Creek Kush 68.35%]",
+    "Deal":"Harbor House Collective 1g Extract [IceBallz 80.39%, Slapz + Lil Friend 76.6%, Kosher Kush + Coal Creek Kush 68.35%]",
     "Price":"1 For 25 or 5 For 45",
-    "Category":"Concentrates"
+    "Category":"Extract"
   },
   {
     "Location":"Fire Antz",
     "Deal":"Crispy Commission 1g Concentrate [Mint Ice Cream Sugar (I) 70.09%, Cherry Pie OG Live Sugar (H) 70.19%, Gold Split Doskies Crumble (H) 75.77%, GMO Fizz Budder (H) 73.47%, Chocolate Slapz Budder (H) 73.49%]",
     "Price":"1 For 25 or 5 For 45",
-    "Category":"Concentrates"
+    "Category":"Extract"
   },
   {
     "Location":"Fire Antz",
     "Deal":"Good Chemistry 1g Live Rosin [Peach Maraschino (S) 92.67%, Eastmont (H) 89.03%, Kush Mintz (I) 88.22%, Pink Lemon Aid (S) 87.45%, The Menage (I) 74.19%]",
     "Price":"1 For 35",
-    "Category":"Concentrates"
+    "Category":"Extract"
   },
   {
     "Location":"Leaf Joy Dispensary",
@@ -1255,9 +1255,9 @@
   },
   {
     "Location":"Leaf Joy Dispensary",
-    "Deal":"WEEDY WAXY WEDNESDAY [$30 1g Green Gold Group Concentrates]",
+    "Deal":"WEEDY WAXY WEDNESDAY [$30 1g Green Gold Group Extract]",
     "Price":"30",
-    "Category":"Concentrates"
+    "Category":"Extract"
   },
   {
     "Location":"Leaf Joy Dispensary",
@@ -1353,7 +1353,7 @@
     "Location":"THCC",
     "Deal":"MAC | Indica RSO Syringe (1g)",
     "Price":"35",
-    "Category":"Concentrates"
+    "Category":"Extract"
   },
   {
     "Location":"OMG Cannabis",
@@ -1449,49 +1449,49 @@
     "Location":"OMG Cannabis",
     "Deal":"3G Crispy Commission - Jars (1g x 3)",
     "Price":"84",
-    "Category":"Concentrates"
+    "Category":"Extract"
   },
   {
     "Location":"OMG Cannabis",
     "Deal":"Harbour House - Sugar (1g)",
     "Price":"2 For 50",
-    "Category":"Concentrates"
+    "Category":"Extract"
   },
   {
     "Location":"OMG Cannabis",
     "Deal":"2G Bountiful Farms - Hash Rosin (1g)",
     "Price":"2 For 99",
-    "Category":"Concentrates"
+    "Category":"Extract"
   },
   {
     "Location":"OMG Cannabis",
     "Deal":"Crispy Commission - Baller Jars 3.5G ",
     "Price":"90",
-    "Category":"Concentrates"
+    "Category":"Extract"
   },
   {
     "Location":"OMG Cannabis",
     "Deal":"Good Chemistry - Live Rosin 1g",
     "Price":"40",
-    "Category":"Concentrates"
+    "Category":"Extract"
   },
   {
     "Location":"OMG Cannabis",
     "Deal":"Fox Tales - Badder 0.5g ",
     "Price":"19",
-    "Category":"Concentrates"
+    "Category":"Extract"
   },
   {
     "Location":"OMG Cannabis",
     "Deal":"Shine - Brownie Scout Badder 0.5g",
     "Price":"20",
-    "Category":"Concentrates"
+    "Category":"Extract"
   },
   {
     "Location":"Berkshire Roots",
-    "Deal":"Daily Medical Specials - Mondays - 2x Loyalty Points + $10 Off 1g Concentrates, 3.5g \"Baller Jar\", or Dablicators",
+    "Deal":"Daily Medical Specials - Mondays - 2x Loyalty Points + $10 Off 1g Extract, 3.5g \"Baller Jar\", or Dablicators",
     "Price":"2x Loyalty Points + 10 Off",
-    "Category":"Concentrates"
+    "Category":"Extract"
   },
   {
     "Location":"Berkshire Roots",
@@ -1531,9 +1531,9 @@
   },
   {
     "Location":"Zaza Green",
-    "Deal":"Deal Of The Day - Wednesday - Wax Wednesday - 4 Regenerative Concentrates For $80",
+    "Deal":"Deal Of The Day - Wednesday - Wax Wednesday - 4 Regenerative Extract For $80",
     "Price":"4 For 80",
-    "Category":"Concentrates"
+    "Category":"Extract"
   },
   {
     "Location":"Zaza Green",
@@ -1579,9 +1579,9 @@
   },
   {
     "Location":"Zaza Green",
-    "Deal":"Deal Of The Day - Sunday - 10% Off Select 1g Concentrates",
+    "Deal":"Deal Of The Day - Sunday - 10% Off Select 1g Extract",
     "Price":"10% Off",
-    "Category":"Concentrates"
+    "Category":"Extract"
   },
   {
     "Location":"Zaza Green",
@@ -1629,7 +1629,7 @@
     "Location":"Boston Bud Company",
     "Deal":"Daily Deals - Terpene Thursdays - Green Gold .5g 3 For $75",
     "Price":"3 For 75",
-    "Category":"Concentrates"
+    "Category":"Extract"
   },
   {
     "Location":"Boston Bud Company",

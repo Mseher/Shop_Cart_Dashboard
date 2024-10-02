@@ -41,14 +41,48 @@ const highlightedIcon = L.divIcon({
 
 // Define category icons with their respective colors
 const categoryIcons = {
-  'Concentrates': { icon: 'fas fa-vial', color: '#365fa6' },
-  'Edibles': { icon: 'fas fa-cookie-bite', color: '#3cc5ab' },
-  'Flower': { icon: 'fas fa-leaf', color: '#2ca0c3' },
-  'Pre-Rolls': { icon: 'fas fa-smoking', color: '#43dd9a' },
-  'Salves & Balms': { icon: 'fas fa-hand-holding-water', color: '#54c594' },
-  'Tinctures': { icon: 'fas fa-tint', color: '#7bdb5c' },
-  'Vapes & Vape Cartridges': { icon: 'fas fa-smoking', color: '#365fa6' }
+  'Extract': {
+    icon: 'fas fa-vial',
+    color: '#365fa6'  // GoldenRod color to represent extracts like oils or concentrates
+  },
+  'Edibles': {
+    icon: 'fas fa-cookie-bite',
+    color: '#8B4513'  // SaddleBrown for a chocolate cookie color
+  },
+  'Flower': {
+    icon: 'fas fa-leaf',
+    color: '#228B22'  // ForestGreen to represent cannabis flower
+  },
+  'Pre-Rolls': {
+    icon: 'fas fa-smoking',
+    color: '#43dd9a'  // Sienna for a tobacco-like, earthy look for pre-rolls
+  },
+  'Topicals': {
+    icon: 'fas fa-hand-holding-water',
+    color: '#4682B4'  // SteelBlue for soothing and medicinal topicals like creams
+  },
+  'Tinctures': {
+    icon: 'fas fa-tint',
+    color: '#6A5ACD'  // SlateBlue for tinctures, representing liquid drops
+  },
+  'Vapes & Vape Cartridges': {
+    icon: 'fas fa-smoking',
+    color: '#708090'  // SlateGray to resemble vape pens and cartridges
+  },
+  'Drinks': {
+    icon: 'fas fa-glass-martini-alt',
+    color: '#1E90FF'  // DodgerBlue to represent beverages and drinks
+  },
+  'Accessories': {
+    icon: 'fas fa-box-open',
+    color: '#D2691E'  // Chocolate color representing accessories or boxes of items
+  },
+  'Featured Deals': {
+    icon: 'fas fa-gift',
+    color: '#FF4500'  // OrangeRed color to highlight special or featured deals
+  }
 };
+
 
 // Function to render the icon in the grid
 const renderCategoryIcon = (category) => {
@@ -76,9 +110,27 @@ const Dashboard = () => {
 
   // Custom Pagination state
   const [page, setPage] = useState(1);
-  const [pageSize] = useState(15); // Fixed number of rows per page
+  const [pageSize, setPageSize] = useState(15);
+  const [currentPage, setCurrentPage] = useState(0);
 
+  const [sortModel, setSortModel] = useState([{ field: 'Location', sort: 'asc' }]);
 
+  // Function to handle sorting based on column and direction
+  const getSortedRows = (rows, sortModel) => {
+    if (!sortModel.length) return rows;
+    const { field, sort } = sortModel[0];
+
+    return rows.slice().sort((a, b) => {
+      const aValue = a[field] ? a[field].toString().toLowerCase() : '';
+      const bValue = b[field] ? b[field].toString().toLowerCase() : '';
+
+      if (aValue < bValue) return sort === 'asc' ? -1 : 1;
+      if (aValue > bValue) return sort === 'asc' ? 1 : -1;
+      return 0;
+    });
+  };
+
+  
 
   // JavaScript code to link geocoder with map, ensure map ref is set correctly.
   useEffect(() => {
@@ -140,7 +192,7 @@ const Dashboard = () => {
       width: 300,
       flex: 1,
       renderCell: (params) => (
-        <div
+          <div
           style={{
             display: 'flex',
             flex: '1',
@@ -153,10 +205,12 @@ const Dashboard = () => {
             minHeight: '60px',
             padding: '5px',
             height: '100%',
+            textOverflow: 'ellipsis'
           }}
         >
           {params.row.Deal}
         </div>
+        
       ),
     },
     {
@@ -214,8 +268,11 @@ const Dashboard = () => {
   const filteredDeals = dealsData.filter((deal) =>
     (selectedCategory === '' || deal.Category === selectedCategory)
   );
+
+  const sortedDeals = getSortedRows(filteredDeals, sortModel);
+
   // Pagination: Calculate rows for the current page
-  const currentPageDeals = filteredDeals.slice((page - 1) * pageSize, page * pageSize);
+  const currentPageDeals = sortedDeals.slice(currentPage * pageSize, (currentPage + 1) * pageSize);
 
   const rows = currentPageDeals.map((deal, index) => ({
     id: index + (page - 1) * pageSize,
@@ -232,8 +289,17 @@ const Dashboard = () => {
       const gridWindow = gridRef.current.querySelector('.MuiDataGrid-virtualScroller'); // DataGrid's scrollable element
       gridWindow.scrollTo({ top: 0, behavior: 'smooth' });
     }
+    setCurrentPage(value);
   };
 
+  const handleSortModelChange = (newSortModel) => {
+    setSortModel(newSortModel);
+  };
+
+  const handlePageSizeChange = (newPageSize) => {
+    setPageSize(newPageSize);
+    setCurrentPage(0); // Reset to first page when page size changes
+  };
   // Handle category change
   const handleCategoryChange = (event) => {
     setSelectedCategory(event.target.value);
@@ -346,7 +412,6 @@ const Dashboard = () => {
       {/* Header */}
       <header className="app-header">
 
-
         <div>
           {/* Filter Dropdown */}
           <div className="filter">
@@ -354,35 +419,34 @@ const Dashboard = () => {
               className="filter-control"
               size="small"
               sx={{
-                width: '150px', // Default width for larger screens
+                width: '150px',
                 '& .MuiOutlinedInput-root': {
-                  height: '30px', // Set height
-                  fontSize: '0.8rem', // Adjust font size
-                  padding: '0px', // Adjust padding for height consistency
+                  height: '30px',
+                  fontSize: '0.8rem',
+                  padding: '0px',
                 },
                 '& .MuiSelect-select': {
                   display: 'flex',
                   alignItems: 'center',
-                  height: '100%', // Ensure it takes full height
-                  padding: '0 10px', // Optional: padding to keep some space
+                  height: '100%',
+                  padding: '0 10px',
                 },
-                // Responsive Media Queries
                 '@media (max-width: 1024px)': {
-                  width: '130px', // Adjust width for tablets
+                  width: '130px',
                   '& .MuiOutlinedInput-root': {
-                    height: '28px', // Slightly smaller height
-                    fontSize: '0.75rem', // Smaller font for tablets
+                    height: '28px',
+                    fontSize: '0.75rem',
                   },
                 },
                 '@media (max-width: 768px)': {
-                  width: '100px', // Narrower on mobile
+                  width: '100px',
                   '& .MuiOutlinedInput-root': {
                     height: '26px',
                     fontSize: '0.7rem',
                   },
                 },
                 '@media (max-width: 480px)': {
-                  width: '100px', // Even smaller for very small screens
+                  width: '100px',
                   '& .MuiOutlinedInput-root': {
                     height: '24px',
                     fontSize: '0.6rem',
@@ -399,10 +463,13 @@ const Dashboard = () => {
                   PaperProps: {
                     sx: {
                       '& .MuiMenuItem-root': {
-                        fontSize: '0.9rem', // Default size for the dropdown items
-                        padding: '8px 16px', // Default padding
+                        fontSize: '0.9rem',
+                        padding: '8px 16px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '10px', // Consistent gap between icon and text
+                        lineHeight: '1.5', // Consistent line height for text alignment
                       },
-                      // Responsive styling for dropdown menu
                       '@media (max-width: 1024px)': {
                         '& .MuiMenuItem-root': {
                           fontSize: '0.8rem',
@@ -425,20 +492,28 @@ const Dashboard = () => {
                 }}
               >
                 <MenuItem value="">
-                  <i className="fas fa-globe" style={{ marginRight: '10px', fontSize: '0.7rem', color: '#7bdb5c' }}></i>
-                  All Categories
+                  <i className="fas fa-globe" style={{ minWidth: '20px', fontSize: '0.7rem', color: '#7bdb5c' }}></i>
+                  <span>All Categories</span>
                 </MenuItem>
                 {Object.keys(categoryIcons).map((category) => (
                   <MenuItem key={category} value={category}>
-                    <i className={categoryIcons[category].icon} style={{ marginRight: '10px', fontSize: '0.8rem', color: categoryIcons[category].color }}></i>
-                    {category}
+                    <i
+                      className={categoryIcons[category].icon}
+                      style={{
+                        minWidth: '20px', // Fixed width for the icons
+                        fontSize: '0.8rem',
+                        color: categoryIcons[category].color,
+                      }}
+                    ></i>
+                    <span style={{ flexShrink: 0 }}>{category}</span> {/* Ensure no text wrapping */}
                   </MenuItem>
                 ))}
               </Select>
             </FormControl>
-
           </div>
         </div>
+
+
 
 
         <img src={logo} alt="Logo" className="logo" />
@@ -451,7 +526,7 @@ const Dashboard = () => {
             </span>
             <input
               type="text"
-              placeholder="Concentrates, edibles, ..."
+              placeholder="Extract, edibles, ..."
               onChange={handleSearchChange} // Handle search input change
             />
 
@@ -479,10 +554,17 @@ const Dashboard = () => {
           <DataGrid
             rows={rows}
             columns={columns}
+            rowHeight={100}
             pageSize={pageSize}
             disableColumnMenu
-            rowHeight={80}
+            onSortModelChange={handleSortModelChange}
+            onPageChange={handlePageChange}
+            onPageSizeChange={handlePageSizeChange}
             onRowClick={(params) => handleRowClick(params)}
+            pagination
+            paginationMode="server"
+            rowCount={filteredDeals.length}  // Ensure this prop is added
+            page={currentPage}
             className="grid-container"
             sx={{
               // DataGrid root styles
@@ -511,7 +593,7 @@ const Dashboard = () => {
               // Responsive Media Queries
               '@media (max-width: 1024px)': {
                 fontSize: '0.8rem', // Slightly smaller font for tablets
-                rowHeight: 80, // Adjust row height for tablets
+                rowHeight: 100, // Adjust row height for tablets
               },
               '@media (max-width: 768px)': {
                 fontSize: '0.7rem', // Even smaller font for mobile screens
@@ -538,7 +620,7 @@ const Dashboard = () => {
             }}
           >
             <Pagination
-              count={Math.ceil(filteredDeals.length / pageSize)}
+              count={Math.ceil(filteredDeals.length / pageSize)-1}
               page={page}
               onChange={handlePageChange}
               color="primary"
