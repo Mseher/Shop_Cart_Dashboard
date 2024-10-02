@@ -74,7 +74,7 @@ const categoryIcons = {
     color: '#1E90FF'  // DodgerBlue to represent beverages and drinks
   },
   'Accessories': {
-    icon: 'fas fa-box-open',
+    icon: 'fas fa-tshirt',
     color: '#D2691E'  // Chocolate color representing accessories or boxes of items
   },
   'Featured Deals': {
