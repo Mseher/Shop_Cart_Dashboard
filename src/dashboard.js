@@ -283,13 +283,17 @@ const Dashboard = () => {
 
   // Handling page change
   const handlePageChange = (event, value) => {
+    const totalPages = Math.ceil(filteredDeals.length / pageSize);
+  
+  // If the new page exceeds the total pages, reset to the last available page
+  const newPage = value > totalPages ? totalPages : value;
     setPage(value);
     // Scroll the DataGrid to the top row after the page changes
     if (gridRef.current) {
       const gridWindow = gridRef.current.querySelector('.MuiDataGrid-virtualScroller'); // DataGrid's scrollable element
       gridWindow.scrollTo({ top: 0, behavior: 'smooth' });
     }
-    setCurrentPage(value);
+    setCurrentPage(newPage - 1); 
   };
 
   const handleSortModelChange = (newSortModel) => {
@@ -303,7 +307,10 @@ const Dashboard = () => {
   // Handle category change
   const handleCategoryChange = (event) => {
     setSelectedCategory(event.target.value);
+    setPage(1);  // Reset the page to 1
+    setCurrentPage(0);  // Reset the DataGrid's currentPage to 0 if necessary
   };
+  
 
   // Handle search input change
   // const handleSearchChange = (event) => {
@@ -620,7 +627,7 @@ const Dashboard = () => {
             }}
           >
             <Pagination
-              count={Math.ceil(filteredDeals.length / pageSize)-1}
+              count={Math.ceil(filteredDeals.length / pageSize)}
               page={page}
               onChange={handlePageChange}
               color="primary"
