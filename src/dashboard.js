@@ -16,6 +16,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import './dashboard.css';
 import customIconImage from './assets/icononly_transparent_nobuffer.png';
+import shadowImage from 'leaflet/dist/images/marker-shadow.png';
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiYnVkdG5kZXIiLCJhIjoiY20xZmUwYW43MjZvYjJxb2FzY3gxdGR4cCJ9.7BY51LXeOKEHES9pYbBV3A';
 
@@ -24,16 +25,22 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiYnVkdG5kZXIiLCJhIjoiY20xZmUwYW43MjZvYjJxb2FzY
 
 const defaultIcon = L.icon({
   iconUrl: customIconImage, // Path to your custom image
+  shadowUrl: shadowImage, // Use the default Leaflet shadow image
   iconSize: [20, 20], // Reduce the size to make it look more pleasant
+  shadowSize: [30, 30], // Adjust the shadow size to be slightly larger than the icon
   iconAnchor: [10, 20], // Adjust the anchor point to the bottom center
+  shadowAnchor: [10, 20], // Align the shadow with the icon
   popupAnchor: [0, -20] // Adjust popup position to appear above the marker
 });
 
 // Highlighted marker icon using the custom image with Leaflet's default shadow
 const highlightedIcon = L.icon({
   iconUrl: customIconImage, // Path to your custom image
+  shadowUrl: shadowImage, // Use the default Leaflet shadow image
   iconSize: [25, 25], // Larger size for highlighted marker but still subtle
+  shadowSize: [35, 35], // Adjust the shadow size for highlighted icon
   iconAnchor: [12.5, 25], // Adjust the anchor point for highlighted icon
+  shadowAnchor: [12.5, 25], // Align the shadow with the icon
   popupAnchor: [0, -25] // Adjust popup position to appear above the highlighted marker
 });
 
