@@ -8,8 +8,8 @@ import Pagination from '@mui/material/Pagination'; // Import MUI Pagination
 
 
 import logo from './assets/transparent_cropped_logo.png';
-import locations from './assets/Locations.json';
-import deals from './assets/Deals.json';
+import locations from './assets/locations.json';
+import deals from './assets/deals.json';
 
 import '@fortawesome/fontawesome-free/css/all.css';
 import L from 'leaflet';
