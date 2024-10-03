@@ -28,7 +28,7 @@
             "properties": {
                 "Location": "253 Farmacy",
                 "Address": "253 Millers Falls Rd, Turners Falls, MA 01376",
-                "Website": ""
+                "Website": "https://253farmacy.com/253-farmacy-turners-falls-dispensary/?utm_source=terrayn_cit&utm_medium=organic&utm_campaign=turners_falls"
             }
         },
         {
@@ -671,7 +671,7 @@
                 ]
             },
             "properties": {
-                "Location": "Turning Leaf Centers",
+                "Location": "Turning Leaf",
                 "Address": "261 King St, Northampton, MA 01060",
                 "Website": "https://turningleafcannabis.com/"
             }
@@ -761,8 +761,8 @@
                 ]
             },
             "properties": {
-                "Location": "Berkshire Roots",
-                "Address": "",
+                "Location": "Berkshire Roots -\nPittsfield",
+                "Address": "501 Dalton Ave, Pittsfield, MA 01201",
                 "Website": "https://berkshireroots.com/pittsfield-adult-menu/"
             }
         },
@@ -776,8 +776,8 @@
                 ]
             },
             "properties": {
-                "Location": "Berkshire Roots ",
-                "Address": "",
+                "Location": "Berkshire Roots - Boston",
+                "Address": "e 253 Meridian St, East Boston, MA 02128",
                 "Website": "https://berkshireroots.com/boston-adult-menu/"
             }
         },
@@ -792,7 +792,7 @@
             },
             "properties": {
                 "Location": "Bloom Brothers",
-                "Address": "",
+                "Address": "2 Larch St, Pittsfield, MA 01201 / 42.45854, -73.20969",
                 "Website": "https://www.bloombrothers.com/"
             }
         },
@@ -807,8 +807,23 @@
             },
             "properties": {
                 "Location": "Diem Cannabis",
-                "Address": "",
+                "Address": "74 Grafton St, Worcester, MA 01604",
                 "Website": "https://hellodiem.com/worcester/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.57894,
+                    42.66502
+                ]
+            },
+            "properties": {
+                "Location": "Tree House Craft Cannabis (THCC)",
+                "Address": "112 Main St, Pepperell, MA 01463",
+                "Website": "https://visittreehousema.com/"
             }
         }
     ]
