@@ -102,19 +102,19 @@
     "Category": "Edibles"
   },
   {
-    "Location": "Boston Bud Company",
+    "Location": "Boston Bud Factory",
     "Deal": "Daily Deals - Muncheas Mondays - Muncheas 3 For $50",
     "Price": "3 For $50",
     "Category": "Edibles"
   },
   {
-    "Location": "Boston Bud Company",
+    "Location": "Boston Bud Factory",
     "Deal": "Daily Deals - Choco-Chew Wednesdays - Coast Chocolates & Green Hornet Chews Buy 2 Get $5 Off",
     "Price": "Buy 2 Get $5 Off",
     "Category": "Edibles"
   },
   {
-    "Location": "Boston Bud Company",
+    "Location": "Boston Bud Factory",
     "Deal": "Daily Deals - Flower Fridays - All ARL InHouse Chews 2 For $20",
     "Price": "2 For $20",
     "Category": "Edibles"
@@ -570,7 +570,7 @@
     "Category": "Extracts"
   },
   {
-    "Location": "Boston Bud Company",
+    "Location": "Boston Bud Factory",
     "Deal": "Daily Deals - Terpene Thursdays - Green Gold .5g 3 For $75",
     "Price": "3 For $75",
     "Category": "Extracts"
@@ -720,7 +720,7 @@
     "Category": "Featured Deals"
   },
   {
-    "Location": "Boston Bud Company",
+    "Location": "Boston Bud Factory",
     "Deal": "Daily Deals - Blooming Saturdays - All Weekly Deals, Rolled Up Into One Day",
     "Price": "All Weekly Deals Active",
     "Category": "Featured Deals"
@@ -918,7 +918,7 @@
     "Category": "Flower"
   },
   {
-    "Location": "Boston Bud Company",
+    "Location": "Boston Bud Factory",
     "Deal": "Daily Deals - Flower Fridays - Buy 2 Pre-Packaged Flower, Get $5 Off",
     "Price": "Buy 2 Get $5 Off",
     "Category": "Flower"
@@ -1332,13 +1332,13 @@
     "Category": "Pre-Rolls"
   },
   {
-    "Location": "Boston Bud Company",
+    "Location": "Boston Bud Factory",
     "Deal": "Fathom Pre-Rolls 3 For $20 [Slippery Susan, Banana Runtz, Sour London Pund Cake]",
     "Price": "3 For $20",
     "Category": "Pre-Rolls"
   },
   {
-    "Location": "Boston Bud Company",
+    "Location": "Boston Bud Factory",
     "Deal": "Daily Deals - Tokin' Tuesdays - Green Gold 1g Pre-Rolls 10 For $50",
     "Price": "10 For $50",
     "Category": "Pre-Rolls"
@@ -1645,7 +1645,7 @@
   },
   {
     "Location": "Revolutionary Clinics",
-    "Deal": "Ace’s 3 of a Kind | 0.5g Pre Roll 3pk |Valid 9/01 – 9/30",
+    "Deal": "Ace’s 3 of a Kind | 0.5g Pre Roll 3pk | Valid 9/01 – 9/30",
     "Price": "1 For $15 Or 4 For $47",
     "Category": "Pre-Rolls"
   },
@@ -1836,7 +1836,7 @@
     "Category": "Vapes & Vape Cartridges"
   },
   {
-    "Location": "Boston Bud Company",
+    "Location": "Boston Bud Factory",
     "Deal": "Daily Deals - Terpene Thursdays - Live Resin Vapes 3 For $75",
     "Price": "3 For $75",
     "Category": "Vapes & Vape Cartridges"
@@ -2149,7 +2149,7 @@
   },
   {
     "Location": "Red Cardinal",
-    "Deal": "rythm Trillarific 1g",
+    "Deal": "Rythm Trillarific 1g",
     "Price": "17 For $34 Or 3 For $88",
     "Category": "Vapes & Vape Cartridges"
   },
